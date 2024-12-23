@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 public class Math_Class {
     public static void main(String[]args) {
