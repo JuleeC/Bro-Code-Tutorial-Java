@@ -9,6 +9,6 @@ public class Arithemticexpressions {
         friends %= 3;
         double x = friends /= 3;
         System.out.println(friends);
-
+        //
     }
 }

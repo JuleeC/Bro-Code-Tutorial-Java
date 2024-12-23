@@ -10,7 +10,7 @@ public class random_numbers_if_statements {
         System.out.println(x);
         if (x) {
             System.out.print("nid");
-
+//
         }
     }
 }

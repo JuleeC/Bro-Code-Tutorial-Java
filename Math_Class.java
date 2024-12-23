@@ -26,7 +26,7 @@ public class Math_Class {
                 Math.ceil(x)+" "+
                 Math.floor(x));
         scanner.close();
-
+        //
 
     }
 }

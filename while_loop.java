@@ -12,5 +12,6 @@ public class while_loop {
             name = scanner.nextLine();
         }
         System.out.println("Welcome " + name);
+        //
     }
 }

@@ -7,6 +7,6 @@ public class for_loop {
             System.out.println(i);
         }
         System.out.println("Happy new year!");
-
+        //
     }
 }
