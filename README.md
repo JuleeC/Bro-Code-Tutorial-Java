@@ -1,0 +1,1 @@
+## I know following tutorials is kinda useless and isnt a good way of learning but i just wanna know the syntax and so more that i couldnt learn from python or the C# we did in school :( or other languages that ive learned(touched)
