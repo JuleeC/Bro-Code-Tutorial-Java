@@ -33,6 +33,7 @@ public class printf {
         // 0 : numeric values are zero-padded
         // , : comma grouping separator if numbers > 1000
 
-        //System
+
+        //System.out.printf("You have this much money %,f",myDouble);
     }
 }
