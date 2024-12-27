@@ -6,5 +6,8 @@ public class Main {
         Friend friend2 = new Friend("dd");
         Friend friend3 = new Friend("cc");
         System.out.println(Friend.numberOfFriends);
+
+        //-------------
+        Friend.displayFriends();
     }
 }
