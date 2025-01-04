@@ -14,7 +14,7 @@ public class abstraction {
 
 
 abstract class Vehicle {
-    //cant get accesed
+
     abstract void go();
 }
 
