@@ -17,12 +17,10 @@ public class polymorphism {
     }
 }
 //**************************************
-class Vehicle_ {
+abstract class Vehicle_ {
 
-    public void go() {
-        // TODO Auto-generated method stub
+    abstract public void go();
 
-    }
 }
 //**************************************
 class Car___ extends Vehicle_{
