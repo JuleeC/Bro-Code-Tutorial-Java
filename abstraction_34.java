@@ -18,6 +18,12 @@ abstract class Vehicle {
 
     abstract void go();
 }
+abstract class Vehicle1 {
+
+    abstract void go();
+}
+//you cant inherit from 2 classes, so if you need to than use an interface (number 38)
+//class Car extends Vehicle,Vehicle1
 
 class Car extends Vehicle{
 
