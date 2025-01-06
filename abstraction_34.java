@@ -6,7 +6,8 @@ public class abstraction_34 {
 
         //Vehicle vehicle = new Vehicle();
         Car car = new Car();
-
+        //not possible because you cant create an object of it (not able to be instantiated)
+        //Vehicle vehicle = new Vehicle();
         car.go();
 
     }
