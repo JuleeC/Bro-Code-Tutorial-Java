@@ -1,4 +1,4 @@
-public class polymorphism {
+class polymorphism {
     public static void main(String[] args) {
 
         // polymorphism = 	greek word for poly-"many", morph-"form"
