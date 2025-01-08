@@ -10,14 +10,14 @@ public class audio_45 {
     public static void main(String[] args) throws UnsupportedAudioFileException, IOException, LineUnavailableException{
 
         Scanner scanner = new Scanner(System.in);
-            try {
+
                 File file = new File("Level_Up.wav");
                 AudioInputStream audioStream = AudioSystem.getAudioInputStream(file);
                 Clip clip = AudioSystem.getClip();
                 clip.open(audioStream);
-            }catch (Error e){
+
                 System.out.println("File not found");
-            }
+
 
 
 
