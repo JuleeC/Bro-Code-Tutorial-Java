@@ -11,7 +11,7 @@ public class Filereader_44 {
         //				when read() returns -1, there is no more data to be read
 
         try {
-            FileReader reader = new FileReader("art.txt");
+            FileReader reader = new FileReader(" art.txt");
             int data = reader.read();
             while (data != -1) {
                 System.out.print((char) data);
