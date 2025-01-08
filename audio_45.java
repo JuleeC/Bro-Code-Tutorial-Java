@@ -29,17 +29,25 @@ public class audio_45 {
 
             response = scanner.next();
             response = response.toUpperCase();
-
-            switch(response) {
-                case ("P"): clip.start();
-                    break;
-                case ("S"): clip.stop();
-                    break;
-                case ("R"): clip.setMicrosecondPosition(0);
-                    break;
-                case ("Q"): clip.close();
-                    break;
-                default: System.out.println("Not a valid response");
+            try {
+                switch (response) {
+                    case ("P"):
+                        clip.start();
+                        break;
+                    case ("S"):
+                        clip.stop();
+                        break;
+                    case ("R"):
+                        clip.setMicrosecondPosition(0);
+                        break;
+                    case ("Q"):
+                        clip.close();
+                        break;
+                    default:
+                        System.out.println("Not a valid response");
+                }
+            } catch(Error e) {
+                System.out.println("clip not initiated");
             }
 
         }
