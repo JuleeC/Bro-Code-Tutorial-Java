@@ -16,7 +16,7 @@ public class labels_47 {
 
         // JLabel = a GUI display area for a string of text, an image, or both
 
-        ImageIcon image = new ImageIcon("dude.png");
+        ImageIcon image = new ImageIcon("C:/Users/jules/Documents/GitHub/Java_learn/GUIs/dude.PNG");
         Border border = BorderFactory.createLineBorder(Color.green,3);
 
         JLabel label = new JLabel(); //create a label
