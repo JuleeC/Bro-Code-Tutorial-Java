@@ -36,7 +36,15 @@ public class Panels_48 {
         greenPanel.setBounds(0, 250, 500, 250);
         greenPanel.setLayout(new BorderLayout());
 
-
+        JFrame frame = new JFrame();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLayout(null);
+        frame.setSize(750,750);
+        frame.setVisible(true);
+        greenPanel.add(label);
+        frame.add(redPanel);
+        frame.add(bluePanel);
+        frame.add(greenPanel);
     }
 }
 
