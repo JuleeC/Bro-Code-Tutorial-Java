@@ -15,21 +15,21 @@ public class checkbox_57{
 
         // JCheckBox = A GUI component that can be selected or deselected
 
-        new MyFrame();
+        new MyFrameee();
 
     }
 }
 //***********************************
 
 
-public class MyFrame extends JFrame implements ActionListener{
+class MyFrameee extends JFrame implements ActionListener{
 
     JButton button;
     JCheckBox checkBox;
     ImageIcon xIcon;
     ImageIcon checkIcon;
 
-    MyFrame(){
+    MyFrameee(){
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(new FlowLayout());
 
