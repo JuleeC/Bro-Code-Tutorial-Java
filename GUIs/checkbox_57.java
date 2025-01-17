@@ -52,7 +52,7 @@ public class MyFrame extends JFrame implements ActionListener{
         this.pack();
         this.setVisible(true);
     }
-
+    // overriding method when on click
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource()==button) {
