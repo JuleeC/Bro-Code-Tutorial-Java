@@ -47,7 +47,7 @@ class MyFrameeeee extends JFrame implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         if(e.getSource()==comboBox) {
             System.out.println(comboBox.getSelectedItem());
-            //System.out.println(comboBox.getSelectedIndex());
+            System.out.println(comboBox.getSelectedIndex());
         }
     }
 }
