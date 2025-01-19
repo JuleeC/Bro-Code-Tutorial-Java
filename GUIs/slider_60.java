@@ -1,5 +1,6 @@
 package GUIs;
 import java.awt.*;
+import java.util.ArrayList;
 import javax.swing.*;
 import javax.swing.event.*;
 
@@ -52,6 +53,11 @@ class SliderDemo implements ChangeListener{
         label.setText("°C = "+ slider.getValue());
 
         slider.addChangeListener(this);
+
+
+
+
+
 
         panel.add(slider);
         panel.add(label);
