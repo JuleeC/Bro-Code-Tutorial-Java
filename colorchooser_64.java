@@ -15,7 +15,7 @@ public class colorchooser_64{
 }
 
 
-public class MyyFrame extends JFrame implements ActionListener{
+class MyyFrame extends JFrame implements ActionListener{
 
 
     JButton button;
