@@ -40,7 +40,17 @@ public class MyyFrame extends JFrame implements ActionListener{
         this.setVisible(true);
     }
 
+    @Override
+    public void actionPerformed(ActionEvent e) {
 
+        if(e.getSource()==button) {
+            JColorChooser colorChooser = new JColorChooser();
+
+            Color color = JColorChooser.showDialog(null, "Pick a color...I guess", Color.black);
+
+            label.setForeground(color);
+            //label.setBackground(color);
+        }
     }
 }
 
