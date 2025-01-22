@@ -18,7 +18,7 @@ class MMyFrame extends JFrame implements KeyListener {
         this.setSize(500,500);
         this.setLayout(null);
         this.addKeyListener(this);
-
+        this.getContentPane().setBackground(Color.BLACK);
 
         label = new JLabel();
         label.setBounds(0,0,100,100);
@@ -31,13 +31,13 @@ class MMyFrame extends JFrame implements KeyListener {
     public void keyTyped(KeyEvent e){
         //invoked when a key is typed. Uses KeyChar, char output
         switch(e.getKeyChar()) {
-            case 'a': label.setLocation(label.getX()-1,label.getY());
+            case 'a': label.setLocation(label.getX()-10,label.getY());
                 break;
-            case 'w': label.setLocation(label.getX(),label.getY()-1);
+            case 'w': label.setLocation(label.getX(),label.getY()-10);
                 break;
-            case 's': label.setLocation(label.getX(),label.getY()+1);
+            case 's': label.setLocation(label.getX(),label.getY()+10);
                 break;
-            case 'd': label.setLocation(label.getX()+1,label.getY());
+            case 'd': label.setLocation(label.getX()+10,label.getY());
                 break;
 
         }
@@ -45,6 +45,20 @@ class MMyFrame extends JFrame implements KeyListener {
     @Override
     public void keyPressed(KeyEvent e){
         // invoked when a physical key is pressed down. Uses KeyCode, int output
+//        switch(e.getKeyChar()) {
+//            case 'a':
+//                label.setLocation(label.getX() - 10, label.getY());
+//                break;
+//            case 'w':
+//                label.setLocation(label.getX(), label.getY() - 10);
+//                break;
+//            case 's':
+//                label.setLocation(label.getX(), label.getY() + 10);
+//                break;
+//            case 'd':
+//                label.setLocation(label.getX() + 10, label.getY());
+//                break;
+
     }
     @Override
     public void keyReleased(KeyEvent e){
