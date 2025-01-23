@@ -31,26 +31,31 @@ class MyFrraame extends JFrame implements MouseListener {
 
     @Override
     public void mouseClicked(MouseEvent e) {
-        System.out.println(e.getSource());
+        System.out.println("you clicked the mouse");
+        label.setBackground(Color.YELLOW);
     }
 
     @Override
     public void mousePressed(MouseEvent e) {
-
+        System.out.println("you pressed the mouse");
+        label.setBackground(Color.GREEN);
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
-
+        System.out.println("you released the mouse");
+        label.setBackground(Color.GRAY);
     }
 
     @Override
     public void mouseEntered(MouseEvent e) {
-
+        System.out.println("you entered the mouse");
+        label.setBackground(Color.CYAN);
     }
 
     @Override
     public void mouseExited(MouseEvent e) {
-
+        System.out.println("you exited the mouse");
+        label.setBackground(Color.ORANGE);
     }
 }
