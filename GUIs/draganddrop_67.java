@@ -3,6 +3,7 @@ package GUIs;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
+import java.awt.event.MouseMotionAdapter;
 
 public class draganddrop_67 {
     public static void main(String[] args) {
@@ -23,7 +24,10 @@ class MyyFrame extends JFrame {
 }
 class DragPanel extends JPanel {
     ImageIcon image = new ImageIcon("dude.PNG");
-
+    final int WIDTH = image.getIconWidth();
+    final int HEIGHT = image.getIconHeight();
+    Point imageCorner;
+    Point prevPT;
     DragPanel() {
 
     }
@@ -33,6 +37,10 @@ class DragPanel extends JPanel {
     }
 
     private class ClickListener extends MouseAdapter {
+
+    }
+
+    private class DragListener extends MouseMotionAdapter {
 
     }
 
