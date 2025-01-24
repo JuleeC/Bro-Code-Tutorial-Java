@@ -24,7 +24,7 @@ class MyyFrame extends JFrame {
     }
 }
 class DragPanel extends JPanel {
-    ImageIcon image = new ImageIcon("dude.PNG");
+    ImageIcon image = new ImageIcon("dude.png");
     final int WIDTH = image.getIconWidth();
     final int HEIGHT = image.getIconHeight();
     Point imageCorner;
@@ -51,7 +51,14 @@ class DragPanel extends JPanel {
     }
 
     private class DragListener extends MouseMotionAdapter {
-
+        public void mouseDragged(MouseEvent e) {
+            Point currentPT = e.getPoint();
+            imageCorner.translate(
+                    (int)(currentPT.getX() - prevPT.getX()),
+                    (int)(currentPT.getY() - prevPT.getY()));
+            prevPT = currentPT;
+            repaint();
+        }
     }
 
 }
