@@ -5,8 +5,10 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 
 public class keybinding_67 {
-Game game = new Game();
-}
+    public static void main(String[] args) {
+        Game game = new Game();
+    }
+ }
 
 class Game {
 
