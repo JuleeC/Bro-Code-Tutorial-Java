@@ -37,18 +37,29 @@ class MyPannel extends JPanel implements ActionListener {
     int y = 0;
 
     MyPannel() {
-    this.setPreferredSize(new Dimension(PANEL_WIDTH,PANEL_HEIGHT));
-    enemy = new ImageIcon("dude.PNG").getImage();
-    timer = new Timer(1000,null);
+        this.setBackground(Color.BLACK);
+        this.setPreferredSize(new Dimension(PANEL_WIDTH,PANEL_HEIGHT));
+        enemy = new ImageIcon("dude.PNG").getImage();
+        timer = new Timer(10,this);
+        timer.start();
 
     }
     public void paint(Graphics g){
+        super.paint(g); //paint background
         Graphics2D g2D = (Graphics2D) g;
-        g2D.drawImage(enemy,x,y,null);
+        //g2D.drawImage(enemy,x,y,null);
+        g2D.drawRect(x,y,50,50);
+        g2D.setColor(Color.RED);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        if (x >= PANEL_WIDTH-enemy.getWidth(null) || x <0) {
+            xVelocity = xVelocity * -1;
+        }
+
+        x = x + xVelocity;
+        repaint();
 
     }
 }
