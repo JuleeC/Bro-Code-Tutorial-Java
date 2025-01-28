@@ -14,26 +14,8 @@ public class generics_70 {
         displayArray(charArray);
         displayArray(stringArray);
     }
-    public static void displayArray(Integer[] array) {
-        for(Integer x : array) {
-            System.out.println(x + " ");
-        }
-        System.out.println();
-    }
-    public static void displayArray(Double[] array) {
-        for(Double x : array) {
-            System.out.println(x + " ");
-        }
-        System.out.println();
-    }
-    public static void displayArray(Character[] array) {
-        for(Character x : array) {
-            System.out.println(x + " ");
-        }
-        System.out.println();
-    }
-    public static void displayArray(String[] array) {
-        for(String x : array) {
+    public static <Thing> void displayArray(Thing[] array) {
+        for (Thing x : array) {
             System.out.println(x + " ");
         }
         System.out.println();
