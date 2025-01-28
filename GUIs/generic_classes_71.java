@@ -1,5 +1,10 @@
 package GUIs;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+
 public class generic_classes_71 {
     public static void main(String[] args) {
 
@@ -7,6 +12,9 @@ public class generic_classes_71 {
         MyGenericClass<Double> myDouble = new MyGenericClass(3.14);
         MyGenericClass<Character> myChar = new MyGenericClass('@');
         MyGenericClass<String> myString = new MyGenericClass("Hello");
+
+        //ArrayList<String> myFriends = new ArrayList<>();
+        HashMap<Integer,String> users = new HashMap<>();
 
         System.out.println(myInt.getValue());
         System.out.println(myDouble.getValue());
