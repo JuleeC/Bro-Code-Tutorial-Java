@@ -9,16 +9,24 @@ public class generics_70 {
         String[] stringArray = {"B","Y","E"};
 
 
-        displayArray(intArray);
-        displayArray(doubleArray);
-        displayArray(charArray);
-        displayArray(stringArray);
+        //displayArray(intArray);
+        //displayArray(doubleArray);
+        //displayArray(charArray);
+        //displayArray(stringArray);
+        System.out.println(getFirst(intArray));
+        System.out.println(getFirst(doubleArray));
+        System.out.println(getFirst(charArray));
+        System.out.println(getFirst(stringArray));
     }
     public static <Thing> void displayArray(Thing[] array) {
         for (Thing x : array) {
             System.out.println(x + " ");
         }
         System.out.println();
+    }
+
+    public static <Thing> Thing getFirst(Thing[] array) {
+        return array[0];
     }
 
 }
