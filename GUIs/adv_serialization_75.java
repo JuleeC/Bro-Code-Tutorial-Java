@@ -22,6 +22,14 @@ public class adv_serialization_75 {
     }
 }
 
-class Userr{
+class Userr implements Serializable{
+    transient String name;
+    transient String password;
 
+    private static final long serialVersionUID = 1;
+
+
+    public void sayHello() {
+        System.out.println("Hello" + name );
+    }
 }
