@@ -8,9 +8,17 @@ public class timertask_76 {
     public static void main(String[] args) {
         Timer timer = new Timer();
         TimerTask task = new TimerTask() {
+            int counter = 10;
             @Override
             public void run() {
-                System.out.println("Task is complete ");
+                if(counter > 0 ) {
+                    System.out.println(counter + " seconds");
+                    counter--;
+                }
+                else  {
+                    System.out.println("HAPPY NEW YEAR");
+                    timer.cancel();
+                }
             }
         };
         Calendar date = Calendar.getInstance();
@@ -23,6 +31,6 @@ public class timertask_76 {
 
         //timer.schedule(task,date.getTime());
         //timer.schedule(task,0);
-        timer.scheduleAtFixedRate(task,0,1000);
+        timer.scheduleAtFixedRate(task,date.getTime(),1000);
     }
 }
