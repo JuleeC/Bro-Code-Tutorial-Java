@@ -30,7 +30,12 @@ class MyThread extends Thread {
 
     @Override
     public void run() {
-        System.out.println("This thread is running");
+        //a daemon thread has a low priority that is running in the background
+        if (this.isDaemon()) {
+            System.out.println("daemon thread is running");
+        } else {
+            System.out.println("This thread is running");
+        }
     }
 
 
