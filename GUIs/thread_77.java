@@ -18,6 +18,21 @@ public class thread_77 {
             System.out.println(i);
             Thread.sleep(1000);
         }
+        MyThread thread2 = new MyThread();
+        thread2.setDaemon(true);
+        System.out.println(thread2.isDaemon());
+        thread2.start();
+        System.out.println(thread2.isAlive());
     }
+}
+
+class MyThread extends Thread {
+
+    @Override
+    public void run() {
+        System.out.println("This thread is running");
+    }
+
+
 }
 
