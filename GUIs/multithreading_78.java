@@ -7,6 +7,9 @@ public class multithreading_78 {
 
     public static void main(String[] args){
         MyThreadss thread1 = new MyThreadss();
+
+        MyRunnable runnable1 = new MyRunnable();
+        Thread thread2 = new Thread(runnable1);
     }
 }
 class MyThreadss extends Thread {
@@ -14,6 +17,19 @@ class MyThreadss extends Thread {
     public void run() {
         for(int i = 10; i >0; i--){
             System.out.println("Thread #1 : " +1 );
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+               e.printStackTrace();
+            }
         }
+        System.out.println("Thread1 is finished");
+    }
+}
+
+class MyRunnable implements Runnable {
+    @Override
+    public void run() {
+
     }
 }
