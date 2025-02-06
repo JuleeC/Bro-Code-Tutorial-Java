@@ -9,5 +9,8 @@ public class executable_81 {
     //at export destination, select where you want this jar file exported to
     //finished
 
-
+    //with IntelliJ
+    //File > Project Structure > Artifacts > (+) > JAR > jar from module with dependencies
+    //Main Class: select the class containing your main method
+    //OK
 }
