@@ -1,0 +1,1 @@
+This folder is not from the 12 hour guide from BRO_CODE, the information is from other videos :)
