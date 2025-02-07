@@ -1,0 +1,15 @@
+package basics_1_81.package2;
+import basics_1_81.acces_modifier_35.package1.*;
+import basics_1_81.package1.A;
+
+public class Asub extends A {
+    public static void main(String[] args) {
+        C c = new C();
+        System.out.println(c.defaultMessage);
+
+        Asub asub = new Asub();
+        System.out.println(asub.protectedMessage);
+
+    }
+
+}
