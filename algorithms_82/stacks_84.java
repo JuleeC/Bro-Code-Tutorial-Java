@@ -20,6 +20,19 @@ public class stacks_84 {
         stack.push("Borderlands");
         stack.push("FFVII");
 
+//        stack.pop();
+//        stack.pop();
+//        stack.pop();
+//        stack.pop();
+//        stack.pop();
+//        stack.pop();
+        //exception if stack is empty but the pop method is called
+
+        //String myFavGame = stack.pop();
+
+        //System.out.println(stack.peek());
+
+
         System.out.println(stack);
     }
 }
