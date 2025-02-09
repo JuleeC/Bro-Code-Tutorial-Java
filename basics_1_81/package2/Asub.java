@@ -1,5 +1,5 @@
 package basics_1_81.package2;
-import basics_1_81.acces_modifier_35.package1.*;
+import basics_1_81.package1.*;
 import basics_1_81.package1.A;
 
 public class Asub extends A {
