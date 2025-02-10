@@ -19,6 +19,18 @@ public class Queues {
         queue.offer("steve");
         queue.offer("harold");
 
+        //if using element there will be an exception
+        queue.poll();
+        queue.poll();
+        queue.poll();
+        queue.poll();
+        queue.poll();
+
+
+        System.out.println(queue.peek());
         System.out.println(queue);
+        System.out.println(queue.isEmpty());
+        System.out.println(queue.size());
+        System.out.println(queue.contains("Harold"));
     }
 }
