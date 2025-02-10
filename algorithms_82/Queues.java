@@ -32,5 +32,10 @@ public class Queues {
         System.out.println(queue.isEmpty());
         System.out.println(queue.size());
         System.out.println(queue.contains("Harold"));
+
+        // Where are queues useful?
+        //1. Keyboard buffer (letters should appear on the screen in the order theyre pressed)
+        //2. Printer Queue (Print jobs should be completed in order)
+        //3. Used in LinkedList, PriorityQueues, Breath first search
     }
 }
