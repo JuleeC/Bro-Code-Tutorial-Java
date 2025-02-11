@@ -8,8 +8,20 @@ public class priorityqueues_85 {
     //                 with the highest priorities first
     //                 before elements with lower priority.
 
-    Queue<Double> queuee = new LinkedList<>();
 
-    queuee.offer(1.0);
+
+    public static void main(String[] args) {
+        Queue<Double> queuee = new LinkedList<>();
+
+        queuee.offer(1.0);
+        queuee.offer(2.5);
+        queuee.offer(4.5);
+        queuee.offer(4.0);
+        queuee.offer(3.1);
+
+        while(!queuee.isEmpty()) {
+            System.out.println(queuee.poll());
+        }
+    }
 
 }
