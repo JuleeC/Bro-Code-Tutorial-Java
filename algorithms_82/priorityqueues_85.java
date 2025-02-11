@@ -1,6 +1,8 @@
 package algorithms_82;
 
+import java.util.Collections;
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class priorityqueues_85 {
@@ -11,13 +13,13 @@ public class priorityqueues_85 {
 
 
     public static void main(String[] args) {
-        Queue<Double> queuee = new LinkedList<>();
+        Queue<String> queuee = new PriorityQueue<>(Collections.reverseOrder());
 
-        queuee.offer(1.0);
-        queuee.offer(2.5);
-        queuee.offer(4.5);
-        queuee.offer(4.0);
-        queuee.offer(3.1);
+        queuee.offer("A");
+        queuee.offer("B");
+        queuee.offer("C");
+        queuee.offer("D");
+        queuee.offer("E");
 
         while(!queuee.isEmpty()) {
             System.out.println(queuee.poll());
