@@ -1,8 +1,19 @@
 package algorithms_82;
 
+import java.nio.file.NotDirectoryException;
 import java.util.LinkedList;
 
 public class linkedlists_86 {
+
+//    LinkedList = stores Nodes in 2 parts(data + address)
+//                 Nodes are in non-consecutive memory locations
+//                 Elements are linked using pointer
+//
+//
+//    Singly Linked List:
+//    Node                    Node                Node
+//    [data | address] -> [data | address] -> [data | address]
+//
 
     public static void main(String[] args) {
 
