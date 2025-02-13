@@ -21,8 +21,15 @@ public class linkedlists_86 {
         linkedlist.add(1,"E");
         linkedlist.remove("E");
 
+        System.out.println(linkedlist.peekFirst());
+        System.out.println(linkedlist.peekLast());
+        linkedlist.addFirst("G");
+        linkedlist.addLast("0");
 
+        String first = linkedlist.removeFirst();
+        String last = linkedlist.removeLast();
 
+        System.out.println(first + " " + last);
         System.out.println(linkedlist);
     }
 }
