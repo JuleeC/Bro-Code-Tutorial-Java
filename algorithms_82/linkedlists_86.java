@@ -8,7 +8,20 @@ public class linkedlists_86 {
 
         LinkedList<String> linkedlist = new LinkedList<String>();
 
+        //offer is also working
         linkedlist.push("A");
+        linkedlist.push("B");
+        linkedlist.push("C");
+        linkedlist.push("D");
+        linkedlist.push("F");
+
+        //poll is also working
+        //linkedlist.pop();
+
+        linkedlist.add(1,"E");
+        linkedlist.remove("E");
+
+
 
         System.out.println(linkedlist);
     }
