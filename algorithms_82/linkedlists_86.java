@@ -1,5 +1,7 @@
 package algorithms_82;
 
+import org.w3c.dom.Node;
+
 import java.nio.file.NotDirectoryException;
 import java.util.LinkedList;
 
@@ -13,7 +15,17 @@ public class linkedlists_86 {
 //    Singly Linked List:
 //    Node                    Node                Node
 //    [data | address] -> [data | address] -> [data | address]
+
+//    Double Linked List:
+//    Node                                    Node
+//    [address | data | address] <-> [address | data | address]
 //
+//    advantages?
+//    1. Dynamic Storage (allocations needed memory while running)
+//    2. Insertion and Deletion of Nodes is easy (I/O)
+//    3. No/Low memory waste
+
+
 
     public static void main(String[] args) {
 
