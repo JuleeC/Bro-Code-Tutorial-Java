@@ -14,6 +14,9 @@ public class dynamic_arrays_87 {
 
         dynamicArray.insert(0,"X");
         dynamicArray.delete("A");
+        dynamicArray.search("C" );
+
+
         System.out.println(dynamicArray);
         System.out.println(dynamicArray.size);
         System.out.println(dynamicArray.capacity);
@@ -71,7 +74,12 @@ class DynamicArray {
         }
     }
     public int search(Object data) {
-        return -1;
+      for(int i = 0; i < size; i++) {
+          if(array[i] == data) {
+              return i;
+          }
+      }
+      return -1;
     }
     private void grow() {
 
