@@ -12,7 +12,13 @@ public class dynamic_arrays_87 {
         dynamicArray.add("B");
         dynamicArray.add("C");
 
+        dynamicArray.insert(0,"X");
+        dynamicArray.delete("A");
         System.out.println(dynamicArray);
+        System.out.println(dynamicArray.size);
+        System.out.println(dynamicArray.capacity);
+        System.out.println(dynamicArray.isEmpty());
+
 
     }
 }
@@ -39,8 +45,18 @@ class DynamicArray {
         size++;
     }
     public void insert(int index, Object data) {
+        if(size >= capacity) {
+            grow();
+        }
+        for(int i = size; i > index; i--) {
+            array[i] = array[i-1];
+            size++;
+        }
+        array[index] =data;
+
     }
     public void delete(Object data) {
+
     }
     public int search(Object data) {
         return -1;
@@ -57,7 +73,7 @@ class DynamicArray {
     public String toString() {
         String string = "";
 
-        for(int i = 0; i < size;i++) {
+        for(int i = 0; i < capacity;i++) {
             string += array[i] + ", ";
         }
         if(string != "" ){
