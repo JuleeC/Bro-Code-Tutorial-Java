@@ -5,12 +5,15 @@ package algorithms_82;
 
 public class dynamic_arrays_87 {
     public static void main(String[] args ) {
-        DynamicArray dynamicArray = new DynamicArray();
+        DynamicArray dynamicArray = new DynamicArray(5);
 
         System.out.println(dynamicArray.capacity);
         dynamicArray.add("A");
         dynamicArray.add("B");
         dynamicArray.add("C");
+        dynamicArray.add("D");
+        dynamicArray.add("E");
+        dynamicArray.add("F");
 
         dynamicArray.insert(0,"X");
         dynamicArray.delete("A");
@@ -88,9 +91,18 @@ class DynamicArray {
         for(int i = 0; i < size; i++) {
             newArray[i] = array[i];
         }
+        capacity= newCapacity;
+        array = newArray;
     }
     private void shrink(){
+        int newCapacity = (int)(capacity /2);
+        Object[] newArray = new Object[newCapacity];
 
+        for(int i = 0; i < size; i++) {
+            newArray[i] = array[i];
+        }
+        capacity= newCapacity;
+        array = newArray;
     }
     public boolean isEmpty(){
         return size == 0;
