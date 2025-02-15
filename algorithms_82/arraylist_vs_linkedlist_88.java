@@ -5,6 +5,7 @@ import java.util.LinkedList;
 
 public class arraylist_vs_linkedlist_88 {
     public static void main(String[] args) {
+
         LinkedList<Integer> linkedList = new LinkedList<Integer>();
         ArrayList<Integer> arrayList = new ArrayList<Integer>();
 
@@ -21,8 +22,12 @@ public class arraylist_vs_linkedlist_88 {
         startTime = System.nanoTime();
 
         //linkedList.get(0);
-      //  linkedList.get(500000);
-        linkedList.get(999999);
+        //linkedList.get(500000);
+        //linkedList.get(999999);
+        //linkedList.remove(0);
+        linkedList.remove(50000);
+
+
 
         endTime = System.nanoTime();
 
@@ -34,8 +39,10 @@ public class arraylist_vs_linkedlist_88 {
         startTime = System.nanoTime();
 
         //arrayList.get(0);
-      //  arrayList.get(500000);
-        arrayList.get(999999);
+        //arrayList.get(500000);
+        //arrayList.get(999999);
+        //arrayList.remove(0);
+        arrayList.remove(50000);
 
         endTime = System.nanoTime();
 
