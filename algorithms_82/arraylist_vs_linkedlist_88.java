@@ -20,11 +20,22 @@ public class arraylist_vs_linkedlist_88 {
 
         startTime = System.nanoTime();
 
-        //do something
+        linkedList.get(0);
 
         endTime = System.nanoTime();
 
         elapsedTime = endTime - startTime;
-        System.out.println()
+        System.out.println("LinkedList:\t" + elapsedTime + "ns");
+
+        //arraylist
+
+        startTime = System.nanoTime();
+
+        arrayList.get(0);
+
+        endTime = System.nanoTime();
+
+        elapsedTime = endTime - startTime;
+        System.out.println("ArrayList:\t" + elapsedTime + "ns");
     }
 }
