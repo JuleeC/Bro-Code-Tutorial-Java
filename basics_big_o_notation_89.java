@@ -27,3 +27,13 @@ public class basics_big_o_notation_89 {
             return sum;
         }
 }
+
+// Big O notation
+
+//O(1) = constant time
+//        random access of an element in an array
+//        inserting at the beginning of linkedlist
+//
+//O(log n) = logarithmic time
+//        binary search
+//
