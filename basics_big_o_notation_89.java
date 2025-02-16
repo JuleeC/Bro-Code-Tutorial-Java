@@ -37,3 +37,18 @@ public class basics_big_o_notation_89 {
 //O(log n) = logarithmic time
 //        binary search
 //
+//O(n) = linear time
+//looping through elements in an array
+//searching through a linkedlist
+//
+//O(n log n) = quasilinear time
+//quicksort
+//        mergesort
+//heapsort
+//
+//O(n*n) = quadratic time
+//insertion sort
+//selection sort
+//bubblesort
+//
+//O(n!) =factorial time
