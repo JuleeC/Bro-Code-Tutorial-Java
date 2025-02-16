@@ -11,4 +11,19 @@ public class basics_big_o_notation_89 {
 //    O(n)
 //    O(log n)
 //    O(n*n)
+
+//    O(n) linear time
+        int addUp(int n) {
+        int sum = 0;
+        for(int i = 0; i <= n; i++) {
+            sum += i;
+        }
+        return sum;
+        }
+//--------------------------------
+//    O(1) constant time
+        int addUpp(int n) {
+            int sum = n*(n+1) / 2;
+            return sum;
+        }
 }
