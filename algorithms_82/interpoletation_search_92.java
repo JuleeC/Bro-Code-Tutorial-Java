@@ -11,6 +11,11 @@ public class interpoletation_search_92 {
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         int index = interpolationSearch(array, 8);
+        if(index != -1) {
+            System.out.println("Element found at index: " + index);
+        }else{
+            System.out.println("Element not found");
+        }
     }
 
     private static int interpolationSearch(int[] array, int value) {
