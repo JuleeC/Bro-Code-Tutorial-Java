@@ -16,7 +16,9 @@ public class interpoletation_search_92 {
         int high = array.length - 1;
         int low = 0;
         while(value >= array[low] && value <= array[high] && low <= high) {
+            int probe = (high - low) * (value - array[low]) / (array[high] - array[low]);
 
+            System.out.println("probe:" + probe);
         }
         return 0;
     }
