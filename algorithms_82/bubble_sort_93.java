@@ -10,7 +10,17 @@ public class bubble_sort_93 {
     public static void main(String[] args) {
         int[] array ={0,1,6,7,4,32,7,8,5,9,2};
 
+        bubbleSort();
 
+        for(int i :array) {
+            System.out.println(i);
+        }
+
+    }
+    public static void bubbleSort(int array[] ) {
+        for() {
+
+        }
 
     }
 }
