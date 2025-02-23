@@ -12,7 +12,22 @@ public class insertion_sort_95 {
     //Less steps than bubble sort
     //best case is O(n) compared to Selection Sort O(n*n)
     public static void main (String[] args) {
+        int array[] = {9,1,2,6,4,8,7,3};
 
+        insertionSort(array);
+        for(int i : array) {
+            System.out.print(i + " ");
+        }
+
+    }
+    private static void insertionSort(int[] array) {
+        for(int i = 1; i < array.length;i++){
+            int temp = array[i];
+            int j = i-1;
+
+            whil
+
+        }
 
     }
 }
