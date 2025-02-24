@@ -18,12 +18,20 @@ public class recursion_96 {
     public static void main(String[] args ){
 
         walk(5);
+        System.out.println(factorial(7));
+
     }
 
     private static void walk(int steps ) {
        if(steps< 1) return;
        System.out.println("You take a step!");
        walk(steps-1); //recursive
+
+    }
+
+    private static int factorial(int num) {
+        if(num < 1) return 1;
+        return num * factorial(num -1); //recursive
 
     }
 }
