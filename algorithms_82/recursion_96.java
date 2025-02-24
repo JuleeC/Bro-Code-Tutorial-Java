@@ -21,9 +21,9 @@ public class recursion_96 {
     }
 
     private static void walk(int steps ) {
-        for(int i = 0; i < steps; i++) {
-            System.out.println("Yout take a step");
-        }
+       if(steps< 1) return;
+       System.out.println("You take a step!");
+       walk(steps-1); //recursive
 
     }
 }
