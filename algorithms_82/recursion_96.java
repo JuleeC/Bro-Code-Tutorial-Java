@@ -15,5 +15,15 @@ public class recursion_96 {
     //sometimes slower
     //uses more memory
 
+    public static void main(String[] args ){
 
+        walk(5);
+    }
+
+    private static void walk(int steps ) {
+        for(int i = 0; i < steps; i++) {
+            System.out.println("Yout take a step");
+        }
+
+    }
 }
