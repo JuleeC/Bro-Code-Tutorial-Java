@@ -47,6 +47,17 @@ public class mergesort_87 {
                 i++;
                 l++;
             }
+            else {
+                Array[i] = rightArray[r];
+                i++;
+                r++;
+            }
+        }
+        while(l < leftSize) {
+            Array[i] = leftArray[l];
+            i++;
+            l++;
+
         }
     }
 }
