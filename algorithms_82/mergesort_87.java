@@ -24,9 +24,16 @@ public class mergesort_87 {
         int j = 0; //right array
 
         for(; i< length; i++) {
-
+            if(i < middle) {
+                leftArray[i] = array[i];
+            }else{
+                rightArray[j] = array[i];
+                j++;
+            }
         }
-
+        mergeSort(leftArray);
+        mergeSort(rightArray);
+        merge(leftArray,rightArray,array);
     }
 
     private static void merge(int[] leftArray, int[] rightArray, int[] Array) {
