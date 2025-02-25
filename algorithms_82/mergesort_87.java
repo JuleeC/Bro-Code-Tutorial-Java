@@ -1,7 +1,9 @@
 package algorithms_82;
 
 public class mergesort_87 {
-
+    // merge sort = recursively divide array in 2, sort, re-combine
+    // run-time complexity = O(n Log n)
+    // space complexity = O(n)
 
     public static void main(String[] args) {
         int[] array = {8,2,3,6,4,5,9,1,7};
