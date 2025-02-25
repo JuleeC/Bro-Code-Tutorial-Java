@@ -37,6 +37,16 @@ public class mergesort_87 {
     }
 
     private static void merge(int[] leftArray, int[] rightArray, int[] Array) {
+        int leftSize = Array.length/2;
+        int rightSize = Array.length-leftSize;
+        int i =0; int l=0; int r = 0; //indices
 
+        while(l <  leftSize && r < rightSize) {
+            if(leftArray[l] < rightArray[r]) {
+                Array[i] = leftArray[l];
+                i++;
+                l++;
+            }
+        }
     }
 }
