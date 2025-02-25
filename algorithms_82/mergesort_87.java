@@ -17,6 +17,16 @@ public class mergesort_87 {
         int length = array.length;
         if(length <= 1) return; //base case
 
+        int middle = length / 2;
+        int[] leftArray = new int[middle];
+        int[] rightArray = new int[length-middle];
+        int i = 0; //left array
+        int j = 0; //right array
+
+        for(; i< length; i++) {
+
+        }
+
     }
 
     private static void merge(int[] leftArray, int[] rightArray, int[] Array) {
