@@ -59,5 +59,10 @@ public class mergesort_87 {
             l++;
 
         }
+        while(r < rightSize) {
+            Array[i] = rightArray[r];
+            i++;
+            r++;
+        }
     }
 }
