@@ -14,7 +14,12 @@ public class mergesort_87 {
 
     }
     public static void mergeSort(int[] array) {
+        int length = array.length;
+        if(length <= 1) return; //base case
 
+    }
+
+    private static void merge(int[] leftArray, int[] rightArray, int[] Array) {
 
     }
 }
