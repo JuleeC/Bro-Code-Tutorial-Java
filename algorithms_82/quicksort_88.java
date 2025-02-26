@@ -25,12 +25,16 @@ public class quicksort_88 {
 
         for(int j = start; j <= end -1 ; j++) {
             if(array[j] < pivot) {
+                i++;
                 int temp = array[i];
                 array[i] = array[j];
                 array[j] = temp;
             }
         }
         i++;
+        int temp = array[i];
+        array[i] = array[end];
+        array[end] = temp;
         return i;
     }
 
