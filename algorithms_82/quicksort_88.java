@@ -7,7 +7,8 @@ public class quicksort_88 {
     // run-time complexity = Best case O(n log(n))
     //                       average case O(n log(n))
     //                       worst case O(n*n) if already sorted
-
+    //
+     // space complexity = O(log(n)) due to recursion
     public static void main(String[] args) {
         int[] array = {1,5,7,9,2,4,3,8,6};
 
