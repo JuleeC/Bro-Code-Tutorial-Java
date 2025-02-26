@@ -1,6 +1,13 @@
 package algorithms_82;
 
 public class quicksort_88 {
+    //quick sort =moves smaller elements to left of a pivot
+    //            recursively divide array in 2 partitions
+
+    // run-time complexity = Best case O(n log(n))
+    //                       average case O(n log(n))
+    //                       worst case O(n*n) if already sorted
+
     public static void main(String[] args) {
         int[] array = {1,5,7,9,2,4,3,8,6};
 
