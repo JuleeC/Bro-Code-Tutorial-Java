@@ -14,6 +14,16 @@ public class quicksort_88 {
 
     private static void quickSort(int[] array, int start, int end) {
         if(end <= start) return; //base case
+        int pivot = partition(array,start,end);
+        quickSort(array,start,pivot-1);
+        quickSort(array,pivot+1,end);
 
     }
+    private static int partition(int[] array, int start, int end) {
+        int pivot = array[end];
+        int i =start -1;
+
+        return i;
+    }
+
 }
