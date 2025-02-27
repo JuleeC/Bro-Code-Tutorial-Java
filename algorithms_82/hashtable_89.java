@@ -6,6 +6,13 @@ public class hashtable_89 {
     //Hashtable = a data structure that stores unique keys to values ex. <Integer,String>
     //            each key/value pair is known as an entry
     //            Fast insertion, look up, deletion of key/value pairs
+    //            Not ideal for small data sets, great with large data sets
+
+    //            hashing = takes a key and computes an integer (formula will vary based on key & data type)
+    //                      In a Hashtable, we use the hash % capacity to calculate an index number
+
+    //                      key.HashCode() % capacity = index
+
 
     public static void main(String[] args) {
         Hashtable<String,String> table = new Hashtable<>(21);
