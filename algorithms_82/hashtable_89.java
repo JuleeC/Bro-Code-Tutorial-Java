@@ -19,7 +19,8 @@ public class hashtable_89 {
     //            collision = hash function generates the same index for more than one key
     //                        less collision = more efficiency
 
-
+    //            Run-time complexity : Best Case O(1)
+    //                                  Worst Case O(n)
 
     public static void main(String[] args) {
         Hashtable<String,String> table = new Hashtable<>(21);
