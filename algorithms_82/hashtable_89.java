@@ -7,6 +7,15 @@ public class hashtable_89 {
         Hashtable<Integer,String> table = new Hashtable<>(10);
 
         table.put(100,"Spongebob");
+        table.put(123,"sandy");
+        table.put(321, "patrick");
+        table.put(555, "Squidward");
+
+
+        for(Integer key : table.keySet()) {
+            System.out.println(key + "  " + table.get(key));
+        }
+
 
     }
 }
