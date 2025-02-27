@@ -12,6 +12,13 @@ public class hashtable_89 {
     //                      In a Hashtable, we use the hash % capacity to calculate an index number
 
     //                      key.HashCode() % capacity = index
+    //
+    //            bucket = an indexed storage location for one or more Entries
+    //                     can store multiple Entries in case of a collision (linked similarly a LinkedList)
+
+    //            collision = hash function generates the same index for more than one key
+    //                        less collision = more efficiency
+
 
 
     public static void main(String[] args) {
