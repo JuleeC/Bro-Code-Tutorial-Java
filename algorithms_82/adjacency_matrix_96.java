@@ -5,5 +5,12 @@ public class adjacency_matrix_96 {
     //# of rows = # of unique nodes
     //# of columns = # of unique nodes
 
+    //runtime complexity to check an EDGE: O(1)
+    //space complexity: O(v*v)
 
+    public static void main(String[] args) {
+
+
+
+    }
 }
