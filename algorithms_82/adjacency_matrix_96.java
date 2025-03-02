@@ -28,6 +28,8 @@ public class adjacency_matrix_96 {
 
         graph.print();
 
+        System.out.println(graph.checkEdge(0,1));
+
 
     }
 }
@@ -51,12 +53,13 @@ class Graph {
         if(matrix[src][dst] == 1) return true; else return false;
     }
     public void print() {
-
-        for(Node node : nodes) System.out.print((char) node.data + " ");
+        System.out.print("  ");
+        for(Node node : nodes) System.out.print( node.data + " ");
 
         System.out.println();
 
         for(int i = 0; i< matrix.length; i++) {
+            System.out.print(nodes.get(i).data + " ");
             for(int j = 0; j< matrix.length; j++) {
                 System.out.print(matrix[i][j] + " ");
             }
@@ -67,7 +70,7 @@ class Graph {
 
 }
 class Node {
-    int data;
+    char data;
     Node(char data) {
         this.data = data;
     }
