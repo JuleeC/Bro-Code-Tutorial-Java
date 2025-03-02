@@ -14,3 +14,17 @@ public class adjacency_matrix_96 {
 
     }
 }
+
+class Graph {
+    int[][] matrix;
+
+    Graph(int size) {
+        matrix = new int[size][size];
+    }
+}
+class Node {
+    int data;
+    Node(char data) {
+        this.data = data;
+    }
+}
