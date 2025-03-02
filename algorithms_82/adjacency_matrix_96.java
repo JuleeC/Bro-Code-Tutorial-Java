@@ -20,7 +20,10 @@ public class adjacency_matrix_96 {
         graph.addEdge(1,2);
         graph.addEdge(2,3);
         graph.addEdge(2,4);
+        graph.addEdge(4,0);
+        graph.addEdge(4,2);
 
+        graph.print();
 
 
     }
@@ -43,7 +46,13 @@ class Graph {
         if(matrix[src][dst] == 1) return true; else return false;
     }
     public void print() {
+        for(int i = 0; i< matrix.length; i++) {
+            for(int j = 0; j< matrix.length; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
 
+        }
     }
 
 }
