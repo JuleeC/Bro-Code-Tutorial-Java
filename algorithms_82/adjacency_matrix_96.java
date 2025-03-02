@@ -1,5 +1,8 @@
 package algorithms_82;
 
+import java.sql.Array;
+import java.util.ArrayList;
+
 public class adjacency_matrix_96 {
     //a 2d array to store 1´s/O´s to represent edges
     //# of rows = # of unique nodes
@@ -30,14 +33,16 @@ public class adjacency_matrix_96 {
 }
 
 class Graph {
+    ArrayList<Node> nodes;
     int[][] matrix;
 
     Graph(int size) {
+        nodes = new ArrayList<>();
         matrix = new int[size][size];
     }
 
     public void addNode(Node node) {
-
+        nodes.add(node);
     }
     public void addEdge(int src, int dst) {
         matrix[src][dst] = 1;
@@ -46,6 +51,11 @@ class Graph {
         if(matrix[src][dst] == 1) return true; else return false;
     }
     public void print() {
+
+        for(Node node : nodes) System.out.print((char) node.data + " ");
+
+        System.out.println();
+
         for(int i = 0; i< matrix.length; i++) {
             for(int j = 0; j< matrix.length; j++) {
                 System.out.print(matrix[i][j] + " ");
