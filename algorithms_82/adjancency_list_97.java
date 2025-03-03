@@ -27,6 +27,7 @@ public class adjancency_list_97 {
         graph.addEdge(2,4);
         graph.addEdge(4,0);
         graph.addEdge(4,2);
+        graph.print();
 
     }
 }
@@ -39,16 +40,31 @@ class Graph_ {
     }
 
     public void addNode(Node node) {
-
+        LinkedList<Node> currentList = new LinkedList<>();
+        currentList.add(node);
+        alist.add(currentList);
     }
     public void addEdge(int src, int dst ){
+        LinkedList<Node> currentList = alist.get(src);
+        Node dstNode = alist.get(dst).get(0);
+        currentList.add(dstNode);
 
     }
-    public void checkEdge(int src, int dst) {
+    public boolean checkEdge(int src, int dst) {
+        LinkedList<Node> currentList = alist.get(src);
+        Node dstNode = alist.get(dst).get(0);
 
+        for(Node node : currentList) {
+            if(node == dstNode) {
+                return true;
+
+            }
+        }
+        return false;
     }
+
     public void print() {
-
+        for()
     }
 
 }
