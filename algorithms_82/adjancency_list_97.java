@@ -64,7 +64,12 @@ class Graph_ {
     }
 
     public void print() {
-        for()
+        for(LinkedList<Node> currentList: alist) {
+            for(Node node : currentList) {
+                System.out.print(node.data + "->");
+            }
+            System.out.println();
+        }
     }
 
 }
