@@ -1,5 +1,8 @@
 package algorithms_82;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+
 public class adjancency_list_97 {
     // an array/arraylist of linkedlists.
     // each LinkedList has a unique node at the head.
@@ -12,4 +15,16 @@ public class adjancency_list_97 {
 
 
     }
+}
+
+class Graph_ {
+    ArrayList<LinkedList<Node>> alist;
+}
+class Node_ {
+    char data;
+
+    Node_(char data) {
+        this.data = data;
+    }
+
 }
