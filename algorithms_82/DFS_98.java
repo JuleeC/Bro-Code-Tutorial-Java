@@ -64,7 +64,19 @@ class Graph__ {
         }
     }
 
-    public void depthFirstSearch
+    public void depthFirstSearch(int src) {
+        boolean[] visited = new boolean[matrix.length];
+        dFSHelper(src,visited);
+    }
+    private void dFSHelper(int src, boolean[] visited) {
+        if(visited[src] == true)
+        {
+            return;
+        }else {
+            visited[src] = true;
+            System.out.println(nodes.get(src).data + " = visited");
+        }
+    }
 }
 class Node__ {
     char data;
