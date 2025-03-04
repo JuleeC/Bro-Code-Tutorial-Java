@@ -1,5 +1,7 @@
 package algorithms_82;
 
+import java.util.ArrayList;
+
 public class DFS_98 {
     // a search algorithm for traversing
     // a tree or graph data structure
@@ -9,7 +11,7 @@ public class DFS_98 {
     // 3. Backtrack to last node that has unvisited adjacent neighbors
 
     public static void main(String[] args) {
-        Graph__ graph = new Graph(5);
+        Graph__ graph = new Graph__(5);
         graph.addNode(new Node('A'));
         graph.addNode(new Node('B'));
         graph.addNode(new Node('C'));
@@ -28,10 +30,46 @@ public class DFS_98 {
     }
 }
 class Graph__ {
+    ArrayList<Node> nodes;
+    int[][] matrix;
 
+    Graph__(int size)  {
+
+    }
+    public void addNode(Node node) {
+        nodes.add(node);
+    }
+    public void addEdge(int src, int dst) {
+        matrix[src][dst] = 1;
+    }
+    public boolean checkEdge(int src, int dst ) {
+        if(matrix[src][dst] == 1) return true; else return false;
+    }
+
+
+
+    public void print() {
+        System.out.print("  ");
+        for(Node node : nodes) System.out.print( node.data + " ");
+
+        System.out.println();
+
+        for(int i = 0; i< matrix.length; i++) {
+            System.out.print(nodes.get(i).data + " ");
+            for(int j = 0; j< matrix.length; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
+
+        }
+    }
+
+    public void depthFirstSearch
 }
 class Node__ {
     char data;
+
+
     Node__(char data) {
         this.data = data;
     }
