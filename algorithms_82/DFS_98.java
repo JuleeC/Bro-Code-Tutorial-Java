@@ -27,6 +27,7 @@ public class DFS_98 {
 
         graph.print();
 
+        graph.depthFirstSearch(3);
     }
 }
 class Graph__ {
@@ -34,6 +35,8 @@ class Graph__ {
     int[][] matrix;
 
     Graph__(int size)  {
+        nodes = new ArrayList<>();
+        matrix = new int[size][size];
 
     }
     public void addNode(Node node) {
@@ -76,6 +79,12 @@ class Graph__ {
             visited[src] = true;
             System.out.println(nodes.get(src).data + " = visited");
         }
+        for(int i = 0; i< matrix[src].length;i++) {
+            if(matrix[src][i] == 1) {
+                dFSHelper(i,visited);
+            }
+        }
+        return;
     }
 }
 class Node__ {
