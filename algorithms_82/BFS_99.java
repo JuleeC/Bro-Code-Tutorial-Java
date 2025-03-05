@@ -1,6 +1,8 @@
 package algorithms_82;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class BFS_99 {
     public static void main(String[] args) {
@@ -59,7 +61,11 @@ class Graph___ {
 
         }
     }
-
+    public void breatdthFirstSearch(int src) {
+        Queue<Integer> queue = new LinkedList<>();
+        boolean[] visited = new boolean[matrix.length];
+        queue.add(src);
+    }
 
 }
 class Node___ {
