@@ -65,6 +65,11 @@ class Graph___ {
         Queue<Integer> queue = new LinkedList<>();
         boolean[] visited = new boolean[matrix.length];
         queue.add(src);
+        visited[src] = true;
+        while(queue.size() != 0) {
+            src = queue.poll();
+            System.out.println(nodes.get(src).data + " visited");
+        }
     }
 
 }
