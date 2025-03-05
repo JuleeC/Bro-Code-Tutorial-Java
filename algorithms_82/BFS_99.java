@@ -5,6 +5,13 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class BFS_99 {
+
+    // Breadth FS = Traverse a graph by level
+    //              Utilizes a Queue
+    //              Better if destination is on average close to start
+    //              Siblings are visited before children
+
+
     public static void main(String[] args) {
         Graph___ graph = new Graph___(5);
         graph.addNode(new Node('A'));
@@ -22,7 +29,7 @@ public class BFS_99 {
 
         graph.print();
 
-
+        graph.breatdthFirstSearch(3);
     }
 }
 class Graph___ {
