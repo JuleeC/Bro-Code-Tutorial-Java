@@ -31,8 +31,10 @@ When nodes share the same parent, they are siblings
 
 ### subtrees is a smaller tree held within a larger tree
 
+## Some terms:
 ### size = # of nodes
 
 ### depth = # of edges below the root node
 
+### height = # of edges above furthest leaf node
 
