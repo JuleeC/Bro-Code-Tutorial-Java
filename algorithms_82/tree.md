@@ -21,4 +21,11 @@ Nodes in the middle are branches
 <br>
 
 ### in family terms:
+The top is the parent
+<br>
+In the middle there is the parent/child
+<br>
+at the bottom there is the child
+<br>
+When nodes share the same parent, they are siblings
 
