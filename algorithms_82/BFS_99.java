@@ -11,6 +11,12 @@ public class BFS_99 {
     //              Better if destination is on average close to start
     //              Siblings are visited before children
 
+    // Depth FS = Traverse a graph branch by branch
+    //            Utilizes a Stack
+    //            Better if destination is on average far from the start
+    //            Chidlren are visited before siblings
+    //            More popular for games/puzzles
+
 
     public static void main(String[] args) {
         Graph___ graph = new Graph___(5);
