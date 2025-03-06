@@ -29,3 +29,10 @@ at the bottom there is the child
 <br>
 When nodes share the same parent, they are siblings
 
+### subtrees is a smaller tree held within a larger tree
+
+### size = # of nodes
+
+### depth = # of edges below the root node
+
+
