@@ -35,4 +35,18 @@ class BinarySearchTree {
  private  boolean searchHelper(Nodee root, int data) {
      return false;
  }
+
+ public void remove(int data) {
+
+ }
+ public Nodee removeHelper(Nodee root, int data) {
+     return null;
+ }
+
+ private int successor(Nodee root) {
+     return 0;
+ }
+ private int predeccessor(Nodee root) {
+        return 0;
+ }
 }
