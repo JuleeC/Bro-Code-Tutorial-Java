@@ -23,5 +23,16 @@ class BinarySearchTree {
  private Nodee insertHelper(Nodee root, Nodee node) {
      return null;
  }
- publi
+ public void display() {
+
+ }
+ private void displayHelper(Nodee root) {
+
+ }
+ public boolean search(int data) {
+     return false;
+ }
+ private  boolean searchHelper(Nodee root, int data) {
+     return false;
+ }
 }
