@@ -3,7 +3,11 @@ package algorithms_82;
 public class binary_search_tree_101 {
 //Binary Search Tree = a tree data structure, where each node is greater than its left child, but less than its right.
 //                     but less than its right.
-    //                 benefit : easy to locate a node when they are in this order
+//                     benefit : easy to locate a node when they are in this order
+    // time complexity: best case O(log n)
+    //                  worst case O(n)
+
+    // space complexity: O(n)
 
 
 
