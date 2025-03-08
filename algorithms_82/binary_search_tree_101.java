@@ -19,9 +19,20 @@ class BinarySearchTree {
  Nodee root;
 
  public void insert(Nodee node) {
+     root = insertHelper(root,node);
  }
  private Nodee insertHelper(Nodee root, Nodee node) {
-     return null;
+     int data = node.data;
+
+     if(root == null) {
+         root = node;
+         return root;
+     } else if (data < root.data ) {
+         root.left = insertHelper(root.left,node);
+     }else {
+         root.right = insertHelper(root.right,node );
+     }
+     return root;
  }
  public void display() {
 
