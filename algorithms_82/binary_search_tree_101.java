@@ -1,7 +1,19 @@
 package algorithms_82;
 
 public class binary_search_tree_101 {
-    BinarySearchTree tree = new BinarySearchTree();
+
+    public static void main(String[] args ) {
+        BinarySearchTree tree = new BinarySearchTree();
+        tree.insert(new Nodee(5));
+        tree.insert(new Nodee(3));
+        tree.insert(new Nodee(6));
+        tree.insert(new Nodee(2));
+        tree.insert(new Nodee(8));
+        tree.insert(new Nodee(9));
+        tree.insert(new Nodee(1));
+        tree.insert(new Nodee(4));
+    }
+
 }
 
 class Nodee {
@@ -35,10 +47,14 @@ class BinarySearchTree {
      return root;
  }
  public void display() {
-
+    displayHelper(root);
  }
  private void displayHelper(Nodee root) {
-
+    if(root != null) {
+        displayHelper(root.left);
+        System.out.println(root.data);
+        displayHelper(root.right);
+    }
  }
  public boolean search(int data) {
      return false;
