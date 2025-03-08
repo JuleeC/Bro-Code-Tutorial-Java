@@ -102,9 +102,15 @@ class BinarySearchTree {
                 root = null;
             }
             else if(root.right != null) {
-
+                root.data =successor(root);
+                root.right = removeHelper(root.right, root.data);
+            }
+            else {
+                root.data = predeccessor(root);
+                root.left = removeHelper(root.left,root.data);
             }
         }
+        return root;
     }
 
 
