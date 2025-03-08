@@ -12,6 +12,8 @@ public class binary_search_tree_101 {
         tree.insert(new Nodee(9));
         tree.insert(new Nodee(1));
         tree.insert(new Nodee(4));
+
+        tree.display();
     }
 
 }
@@ -57,10 +59,19 @@ class BinarySearchTree {
     }
  }
  public boolean search(int data) {
-     return false;
+     return searchHelper(root, data);
  }
  private  boolean searchHelper(Nodee root, int data) {
-     return false;
+     if(root == null){
+         return false;
+     }else if(root.data == data) {
+         return true;
+     }
+     else if(root.data > data) {
+         return searchHelper(root.left, data );
+     } else  {
+         return searchHelper(root.right, data );
+     }
  }
 
  public void remove(int data) {
