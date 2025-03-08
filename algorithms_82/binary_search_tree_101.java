@@ -1,6 +1,11 @@
 package algorithms_82;
 
 public class binary_search_tree_101 {
+//Binary Search Tree = a tree data structure, where each node is greater than its left child, but less than its right.
+//                     but less than its right.
+    //                 benefit : easy to locate a node when they are in this order
+
+
 
     public static void main(String[] args ) {
         BinarySearchTree tree = new BinarySearchTree();
@@ -12,7 +17,11 @@ public class binary_search_tree_101 {
         tree.insert(new Nodee(9));
         tree.insert(new Nodee(1));
         tree.insert(new Nodee(4));
+        tree.insert(new Nodee(7));
 
+        tree.remove(0);
+        tree.remove(4);
+        tree.remove(5);
         tree.display();
 
         System.out.println(tree.search(1));
