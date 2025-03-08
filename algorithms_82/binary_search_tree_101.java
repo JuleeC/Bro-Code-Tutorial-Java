@@ -14,6 +14,8 @@ public class binary_search_tree_101 {
         tree.insert(new Nodee(4));
 
         tree.display();
+
+        System.out.println(tree.search(1));
     }
 
 }
@@ -30,56 +32,73 @@ class Nodee {
 }
 
 class BinarySearchTree {
- Nodee root;
+    Nodee root;
 
- public void insert(Nodee node) {
-     root = insertHelper(root,node);
- }
- private Nodee insertHelper(Nodee root, Nodee node) {
-     int data = node.data;
-
-     if(root == null) {
-         root = node;
-         return root;
-     } else if (data < root.data ) {
-         root.left = insertHelper(root.left,node);
-     }else {
-         root.right = insertHelper(root.right,node );
-     }
-     return root;
- }
- public void display() {
-    displayHelper(root);
- }
- private void displayHelper(Nodee root) {
-    if(root != null) {
-        displayHelper(root.left);
-        System.out.println(root.data);
-        displayHelper(root.right);
+    public void insert(Nodee node) {
+        root = insertHelper(root, node);
     }
- }
- public boolean search(int data) {
-     return searchHelper(root, data);
- }
- private  boolean searchHelper(Nodee root, int data) {
-     if(root == null){
-         return false;
-     }else if(root.data == data) {
-         return true;
-     }
-     else if(root.data > data) {
-         return searchHelper(root.left, data );
-     } else  {
-         return searchHelper(root.right, data );
-     }
- }
 
- public void remove(int data) {
+    private Nodee insertHelper(Nodee root, Nodee node) {
+        int data = node.data;
 
- }
- public Nodee removeHelper(Nodee root, int data) {
-     return null;
- }
+        if (root == null) {
+            root = node;
+            return root;
+        } else if (data < root.data) {
+            root.left = insertHelper(root.left, node);
+        } else {
+            root.right = insertHelper(root.right, node);
+        }
+        return root;
+    }
+
+    public void display() {
+        displayHelper(root);
+    }
+
+    private void displayHelper(Nodee root) {
+        if (root != null) {
+            displayHelper(root.left);
+            System.out.println(root.data);
+            displayHelper(root.right);
+        }
+    }
+
+    public boolean search(int data) {
+        return searchHelper(root, data);
+    }
+
+    private boolean searchHelper(Nodee root, int data) {
+        if (root == null) {
+            return false;
+        } else if (root.data == data) {
+            return true;
+        } else if (root.data > data) {
+            return searchHelper(root.left, data);
+        } else {
+            return searchHelper(root.right, data);
+        }
+    }
+
+    public void remove(int data) {
+        if (search(data)) {
+            removeHelper(root, data);
+        } else {
+            System.out.println(data + " could not be found ");
+        }
+    }
+
+    public Nodee removeHelper(Nodee root, int data) {
+        if (root == null) {
+            return root;
+        } else if (data < root.data) {
+            root.left = removeHelper(root.left, data);
+        }
+        else if(data > root.data ) {
+            root.right = removeHelper(root.right,data);
+        }
+    }
+
 
  private int successor(Nodee root) {
      return 0;
