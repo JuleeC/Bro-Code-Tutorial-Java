@@ -114,10 +114,20 @@ class BinarySearchTree {
     }
 
 
- private int successor(Nodee root) {
-     return 0;
+ private int successor(Nodee root) { //find least value below the right child of this root node
+     root = root.right;
+     while(root.left != null ) {
+         root = root.left;
+
+     }
+     return root.data;
  }
- private int predeccessor(Nodee root) {
-        return 0;
- }
+ private int predeccessor(Nodee root) { //find greatest value below the right child of this root node
+     root = root.left;
+     while(root.right != null ) {
+         root = root.right;
+
+     }
+     return root.data;
+    }
 }
