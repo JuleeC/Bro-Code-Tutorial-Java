@@ -97,6 +97,14 @@ class BinarySearchTree {
         else if(data > root.data ) {
             root.right = removeHelper(root.right,data);
         }
+        else { //node found
+            if(root.left == null && root.right == null ){
+                root = null;
+            }
+            else if(root.right != null) {
+
+            }
+        }
     }
 
 
