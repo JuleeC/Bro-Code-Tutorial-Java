@@ -19,3 +19,4 @@ We go as far to the left as we can, then we go to the right branch and after it 
 pre-Order:
 It is used to create a copy from a tree
 We go to root, then we go to the left branch and after it we switch to the right branch
+![img_7.png](img_7.png)
