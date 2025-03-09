@@ -15,3 +15,7 @@ post-Order:
 It is used to delete leafs from a tree
 We go as far to the left as we can, then we go to the right branch and after it we switch to root
 ![img_6.png](img_6.png)
+
+pre-Order:
+It is used to create a copy from a tree
+We go to root, then we go to the left branch and after it we switch to the right branch
