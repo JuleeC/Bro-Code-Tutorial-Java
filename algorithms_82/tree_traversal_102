@@ -1,0 +1,2 @@
+Tree traversal is the process of visiting all the nodes in a tree
+We dont have random access, so we need to traverse through the tree
