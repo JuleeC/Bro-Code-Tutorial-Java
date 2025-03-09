@@ -5,4 +5,7 @@ There are 3 types of navigating through a tree:
 2) post-order
 3) pre-order
 
-We are working with a binary Tree, not a binary Search Tree because the nodes are not values for a binary Search Tree
+We are working with a binary Tree, not a binary Search Tree because the nodes are not values in order
+
+in-Order:
+![img_5.png](img_5.png)
