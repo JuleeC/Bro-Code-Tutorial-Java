@@ -15,7 +15,8 @@ Map myMap = {
   'name': 'John Doe',
   'age': 30,
   'isStudent': true,
-}; // Map
+};
+ // Map
 List myList = ['apple', 'banana', 'orange']; // List
 List<int> myIntList = [1, 2, 3, 4, 5]; // List of integers
 List<String> myStringList = ['apple', 'banana', 'orange']; // List of strings
