@@ -24,7 +24,7 @@ void app_main(void)
     while (1) 
     {
         int adc_value = adc1_get_raw(ADC1_CHANNEL_4);
-        spg_value = (double)(adc_value/4095)*3.3;
+        spg_value = (double)(adc_value)/4095*3.3;
         printf("SPG Value: %f", spg_value);
         printf("ADC Value: %d", adc_value);
         printf("\n");
