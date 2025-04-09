@@ -1,0 +1,8 @@
+C:\Users\jules\source\repos\aufgabe5_4\aufgabe5_4\obj\Debug\aufgabe5_4.csproj.AssemblyReference.cache
+C:\Users\jules\source\repos\aufgabe5_4\aufgabe5_4\obj\Debug\aufgabe5_4.csproj.SuggestedBindingRedirects.cache
+C:\Users\jules\source\repos\aufgabe5_4\aufgabe5_4\obj\Debug\aufgabe5_4.csproj.CoreCompileInputs.cache
+C:\Users\jules\source\repos\aufgabe5_4\aufgabe5_4\bin\Debug\aufgabe5_4.exe.config
+C:\Users\jules\source\repos\aufgabe5_4\aufgabe5_4\bin\Debug\aufgabe5_4.exe
+C:\Users\jules\source\repos\aufgabe5_4\aufgabe5_4\bin\Debug\aufgabe5_4.pdb
+C:\Users\jules\source\repos\aufgabe5_4\aufgabe5_4\obj\Debug\aufgabe5_4.exe
+C:\Users\jules\source\repos\aufgabe5_4\aufgabe5_4\obj\Debug\aufgabe5_4.pdb
