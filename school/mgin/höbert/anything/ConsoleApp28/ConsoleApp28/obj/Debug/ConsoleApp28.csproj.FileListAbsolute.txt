@@ -1,0 +1,8 @@
+C:\Users\jules\source\repos\ConsoleApp28\ConsoleApp28\obj\Debug\ConsoleApp28.csproj.AssemblyReference.cache
+C:\Users\jules\source\repos\ConsoleApp28\ConsoleApp28\obj\Debug\ConsoleApp28.csproj.SuggestedBindingRedirects.cache
+C:\Users\jules\source\repos\ConsoleApp28\ConsoleApp28\obj\Debug\ConsoleApp28.csproj.CoreCompileInputs.cache
+C:\Users\jules\source\repos\ConsoleApp28\ConsoleApp28\bin\Debug\ConsoleApp28.exe.config
+C:\Users\jules\source\repos\ConsoleApp28\ConsoleApp28\bin\Debug\ConsoleApp28.exe
+C:\Users\jules\source\repos\ConsoleApp28\ConsoleApp28\bin\Debug\ConsoleApp28.pdb
+C:\Users\jules\source\repos\ConsoleApp28\ConsoleApp28\obj\Debug\ConsoleApp28.exe
+C:\Users\jules\source\repos\ConsoleApp28\ConsoleApp28\obj\Debug\ConsoleApp28.pdb

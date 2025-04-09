@@ -1,0 +1,8 @@
+C:\Users\jules\source\repos\ConsoleApp44\ConsoleApp44\bin\Debug\ConsoleApp44.exe.config
+C:\Users\jules\source\repos\ConsoleApp44\ConsoleApp44\bin\Debug\ConsoleApp44.exe
+C:\Users\jules\source\repos\ConsoleApp44\ConsoleApp44\bin\Debug\ConsoleApp44.pdb
+C:\Users\jules\source\repos\ConsoleApp44\ConsoleApp44\obj\Debug\ConsoleApp44.csproj.AssemblyReference.cache
+C:\Users\jules\source\repos\ConsoleApp44\ConsoleApp44\obj\Debug\ConsoleApp44.csproj.SuggestedBindingRedirects.cache
+C:\Users\jules\source\repos\ConsoleApp44\ConsoleApp44\obj\Debug\ConsoleApp44.csproj.CoreCompileInputs.cache
+C:\Users\jules\source\repos\ConsoleApp44\ConsoleApp44\obj\Debug\ConsoleApp44.exe
+C:\Users\jules\source\repos\ConsoleApp44\ConsoleApp44\obj\Debug\ConsoleApp44.pdb

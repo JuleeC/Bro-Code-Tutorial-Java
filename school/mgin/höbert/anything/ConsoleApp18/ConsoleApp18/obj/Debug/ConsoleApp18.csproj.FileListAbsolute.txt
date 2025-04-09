@@ -1,0 +1,8 @@
+C:\Users\jules\source\repos\ConsoleApp18\ConsoleApp18\bin\Debug\ConsoleApp18.exe.config
+C:\Users\jules\source\repos\ConsoleApp18\ConsoleApp18\bin\Debug\ConsoleApp18.exe
+C:\Users\jules\source\repos\ConsoleApp18\ConsoleApp18\bin\Debug\ConsoleApp18.pdb
+C:\Users\jules\source\repos\ConsoleApp18\ConsoleApp18\obj\Debug\ConsoleApp18.csproj.AssemblyReference.cache
+C:\Users\jules\source\repos\ConsoleApp18\ConsoleApp18\obj\Debug\ConsoleApp18.csproj.SuggestedBindingRedirects.cache
+C:\Users\jules\source\repos\ConsoleApp18\ConsoleApp18\obj\Debug\ConsoleApp18.csproj.CoreCompileInputs.cache
+C:\Users\jules\source\repos\ConsoleApp18\ConsoleApp18\obj\Debug\ConsoleApp18.exe
+C:\Users\jules\source\repos\ConsoleApp18\ConsoleApp18\obj\Debug\ConsoleApp18.pdb
