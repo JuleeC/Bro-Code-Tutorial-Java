@@ -78,15 +78,27 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
+         child: Container(
+            height: double.infinity,
+            width: double.infinity,
+            color: Colors.white,
+            padding: EdgeInsets.only(top: 120.0),
+            margin: EdgeInsets.all(20.0),
         child: Container(
-          color: Colors.red,
-          height: 100.0,
-          width: 100.0,
+          //infinity takes all the space
+          height: double.infinity,
+          width: double.infinity,
+          padding: EdgeInsets.all(20.0),
+          margin: EdgeInsets.all(20.0),
           decoration: BoxDecoration(  
             borderRadius: BorderRadius.circular(10.0),
+            color: Colors.blue,
            
           ),
+         
+       
           child: Column(
+            
             mainAxisAlignment: MainAxisAlignment.center,
             
             children: <Widget>[
@@ -96,6 +108,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 style: Theme.of(context).textTheme.headlineMedium,
               ),              
             ],
+          ),
           ),
         ),
       ),
