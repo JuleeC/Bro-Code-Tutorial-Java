@@ -81,12 +81,12 @@ class _MyHomePageState extends State<MyHomePage> {
          child: Container(
             height: double.infinity,
             width: double.infinity,
-            color: Colors.black,
+           
             padding: EdgeInsets.all(111),
             margin: EdgeInsets.all(20.0),
              decoration: BoxDecoration(  
             borderRadius: BorderRadius.circular(10.0),
-            
+             color: Colors.black,
            
           ),
             
@@ -98,7 +98,7 @@ class _MyHomePageState extends State<MyHomePage> {
           margin: EdgeInsets.all(20.0),
           decoration: BoxDecoration(  
             borderRadius: BorderRadius.circular(10.0),
-            color: Colors.blue,
+            color: Colors.yellow,
            
           ),
          
