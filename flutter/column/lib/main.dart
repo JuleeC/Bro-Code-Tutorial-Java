@@ -88,6 +88,10 @@ class _MyHomePageState extends State<MyHomePage> {
           crossAxisAlignment: CrossAxisAlignment.center,
           //to set the alignment of the column to center
           //mainAxisSize: MainAxisSize.max,
+          //to set the size of the column to max
+          //mainAxisSize: MainAxisSize.min,
+          //to set the size of the column to min
+          
           children: [
             Container(
               height: 100.0,
