@@ -78,35 +78,38 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Column (
+        child: Container(
+          color: Colors.black,
+          width: double.infinity,
+
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          //to set the alignment of the column to center
           crossAxisAlignment: CrossAxisAlignment.center,
+          //to set the alignment of the column to center
+          //mainAxisSize: MainAxisSize.max,
           children: [
             Container(
-             height : 100.0,
-            width: 100.0,
-             decoration: BoxDecoration(  
-            borderRadius: BorderRadius.circular(10.0),
-             color: Colors.red,
+              height: 100.0,
+              width: 100.0,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10.0),
+                color: Colors.red,
+              ),
             ),
-         ),
-          Container(
-              height : 100.0,
-            width: 100.0,
-             decoration: BoxDecoration(  
-            borderRadius: BorderRadius.circular(10.0),
-             color: Colors.red,
-           
+            Container(
+              height: 100.0,
+              width: 100.0,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10.0),
+                color: Colors.red,
+              ),
             ),
-          ),
-        ],
-            
-      
-         
-       
-
-          ),
+        
+          ],
         ),
+        ),
+      ),
       
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
