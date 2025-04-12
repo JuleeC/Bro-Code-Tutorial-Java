@@ -78,7 +78,9 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-         child: Container(
+        child: Column (
+          children: [
+            Container(
             height: double.infinity,
             width: double.infinity,
            
@@ -88,36 +90,29 @@ class _MyHomePageState extends State<MyHomePage> {
             borderRadius: BorderRadius.circular(10.0),
              color: Colors.black,
            
-          ),
-            
-        child: Container(
-          //infinity takes all the space
-          height: double.infinity,
-          width: double.infinity,
-          padding: EdgeInsets.all(20.0),
-          margin: EdgeInsets.all(20.0),
-          decoration: BoxDecoration(  
-            borderRadius: BorderRadius.circular(10.0),
-            color: Colors.yellow,
+            ),
+         ),
+          Container(
+            height: double.infinity,
+            width: double.infinity,
            
+            padding: EdgeInsets.all(111),
+            margin: EdgeInsets.all(20.0),
+             decoration: BoxDecoration(  
+            borderRadius: BorderRadius.circular(10.0),
+             color: Colors.black,
+           
+            ),
           ),
+        ],
+            
+      
          
        
-          child: Column(
-            
-            mainAxisAlignment: MainAxisAlignment.center,
-            
-            children: <Widget>[
-              const Text('You have pushed the button this many times:'),
-              Text(
-                '$_counter',
-                style: Theme.of(context).textTheme.headlineMedium,
-              ),              
-            ],
-          ),
+
           ),
         ),
-      ),
+      
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
