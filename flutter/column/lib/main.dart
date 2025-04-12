@@ -79,16 +79,20 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: Column (
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-            width: double.infinity,
+             height : 100.0,
+            width: 100.0,
              decoration: BoxDecoration(  
             borderRadius: BorderRadius.circular(10.0),
              color: Colors.red,
             ),
          ),
           Container(
-            width: double.infinity,
+              height : 100.0,
+            width: 100.0,
              decoration: BoxDecoration(  
             borderRadius: BorderRadius.circular(10.0),
              color: Colors.red,
