@@ -83,10 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
           
 
           child: Row(
-           
-            mainAxisSize: MainAxisSize.max,
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
             //to set the alignment of the column to center
            
             //to set the alignment of the column to center
@@ -102,6 +99,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.0),
                   color: Colors.red,
+                ),
+                child: Center(
+                  child: Text('1'),
                 ),
               ),
               Container(
