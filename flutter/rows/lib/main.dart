@@ -80,35 +80,38 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Container(
           color: Colors.black,
-          width: double.infinity,
-
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          //to set the alignment of the column to center
-          crossAxisAlignment: CrossAxisAlignment.center,
-          //to set the alignment of the column to center
-          //mainAxisSize: MainAxisSize.max,
-          //to set the size of the column to max
-          //mainAxisSize: MainAxisSize.min,
-          //to set the size of the column to min
           
-          children: [
-            Container(
-              height: 100.0,
-              width: 100.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10.0),
-                color: Colors.red,
+
+          child: Row(
+           
+            mainAxisSize: MainAxisSize.max,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            //to set the alignment of the column to center
+           
+            //to set the alignment of the column to center
+            //mainAxisSize: MainAxisSize.max,
+            //to set the size of the column to max
+            //mainAxisSize: MainAxisSize.min,
+            //to set the size of the column to min
+            
+            children: [
+              Container(
+                height: 100.0,
+                width: 100.0,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10.0),
+                  color: Colors.red,
+                ),
               ),
-            ),
-            Container(
-              height: 100.0,
-              width: 100.0,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10.0),
-                color: Colors.red,
+              Container(
+                height: 100.0,
+                width: 100.0,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10.0),
+                  color: Colors.red,
+                ),
               ),
-            ),
         
           ],
         ),
