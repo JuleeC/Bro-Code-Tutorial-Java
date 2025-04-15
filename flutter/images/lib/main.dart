@@ -78,10 +78,11 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       //one way
-      body: Image.network(
-        'https://www.google.com/imgres?q=bild&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fe%2Fe3%2FLogo_BILD.svg%2F800px-Logo_BILD.svg.png&imgrefurl=https%3A%2F%2Fde.wikipedia.org%2Fwiki%2FBild.de&docid=Q1LAIj17E8mswM&tbnid=nFprw5thULI9SM&vet=12ahUKEwi-8cqCgdqMAxXrgP0HHbhfByUQM3oECB0QAA..i&w=800&h=850&hcb=2&ved=2ahUKEwi-8cqCgdqMAxXrgP0HHbhfByUQM3oECB0QAA',
-        height: 100.0,
-        width: double.infinity,
+      body: Image.asset(
+        'assets/images/holzl.jpg',
+        //to set the image to cover the whole screen
+        height: double.infinity,
+        fit: BoxFit.cover,
       ),
       
       floatingActionButton: FloatingActionButton(
