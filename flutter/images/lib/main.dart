@@ -77,46 +77,11 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Center(
-        child: Container(
-          color: Colors.black,
-          
-
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            //to set the alignment of the column to center
-           
-            //to set the alignment of the column to center
-            //mainAxisSize: MainAxisSize.max,
-            //to set the size of the column to max
-            //mainAxisSize: MainAxisSize.min,
-            //to set the size of the column to min
-            
-            children: [
-              Container(
-                height: 100.0,
-                width: 100.0,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10.0),
-                  color: Colors.red,
-                ),
-                child: Center(
-                  child: Text(_counter.toString()),
-                
-                ),
-              ),
-              Container(
-                height: 100.0,
-                width: 100.0,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10.0),
-                  color: Colors.red,
-                ),
-              ),
-        
-          ],
-        ),
-        ),
+      //one way
+      body: Image.network(
+        'https://www.google.com/imgres?q=bild&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fe%2Fe3%2FLogo_BILD.svg%2F800px-Logo_BILD.svg.png&imgrefurl=https%3A%2F%2Fde.wikipedia.org%2Fwiki%2FBild.de&docid=Q1LAIj17E8mswM&tbnid=nFprw5thULI9SM&vet=12ahUKEwi-8cqCgdqMAxXrgP0HHbhfByUQM3oECB0QAA..i&w=800&h=850&hcb=2&ved=2ahUKEwi-8cqCgdqMAxXrgP0HHbhfByUQM3oECB0QAA',
+        height: 100.0,
+        width: double.infinity,
       ),
       
       floatingActionButton: FloatingActionButton(
