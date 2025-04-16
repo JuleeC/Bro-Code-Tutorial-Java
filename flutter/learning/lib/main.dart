@@ -76,6 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
+        leading: Icon(Icons.notification_add,color: Colors.amber)
       ),
       //one way
       body: Container(
@@ -89,7 +90,11 @@ class _MyHomePageState extends State<MyHomePage> {
               width: double.infinity,
               height: 300,
             ),
-            SizedBox(height:300,child: Center(child: Text("Flutter"))),
+            SizedBox(
+            height:300,
+            child: Center(
+              child: Text("Flutter"))),
+
           ],
         ),
       ),
