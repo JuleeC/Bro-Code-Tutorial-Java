@@ -78,17 +78,20 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       //one way
-      body: Stack(
-        children: [
-          Image.asset(
-            'assets/images/aes.jpg',
-            //to set the image to cover the whole screen
-            fit: BoxFit.fill,
-            width: double.infinity,
-            height: 300,
-          ),
-          SizedBox(height:300,child: Center(child: Text("Flutter"))),
-        ],
+      body: Container(
+        padding: EdgeInsets.all(50),
+        child: Stack(
+          children: [
+            Image.asset(
+              'assets/images/aes.jpg',
+              //to set the image to cover the whole screen
+              fit: BoxFit.fill,
+              width: double.infinity,
+              height: 300,
+            ),
+            SizedBox(height:300,child: Center(child: Text("Flutter"))),
+          ],
+        ),
       ),
       
       floatingActionButton: FloatingActionButton(
