@@ -24,9 +24,21 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Flutter App'),
           centerTitle: true,
-          
-         
+
         ),
+        bottomNavigationBar: NavigationBar(
+          destinations: [
+            NavigationDestination(
+              icon: Icon(Icons.home),
+              label: "Home"),
+              NavigationDestination(
+              icon: Icon(Icons.percent),
+              label: "asd")],
+              selectedIndex: 1,
+              onDestinationSelected: (int value) {
+                print(value);
+              },),
+            
       ),
     );
   }
