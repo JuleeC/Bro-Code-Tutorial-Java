@@ -24,12 +24,8 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Flutter App'),
           centerTitle: true,
-          leading: Icon(Icons.menu),
-          actions: [
-            Text("asddasddsa"),
-            Icon(Icons.search),
-            Icon(Icons.notifications),
-          ],
+          
+         
         ),
       ),
     );
