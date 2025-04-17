@@ -80,20 +80,20 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       //one way
       body: Container(
-        padding: EdgeInsets.all(50),
+        
         child: Stack(
           children: [
-            Image.asset(
-              'assets/images/aes.jpg',
-              //to set the image to cover the whole screen
-              fit: BoxFit.fill,
-              width: double.infinity,
-              height: 300,
-            ),
+           
             SizedBox(
             height:300,
             child: Center(
               child: Text("Flutter"))),
+            ListTile(
+              leading: Icon(Icons.join_full),
+              tileColor: Colors.red,
+              title: Text("Flutter"),
+              trailing : Text("asdsad"),
+            )
 
           ],
         ),
