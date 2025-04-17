@@ -79,28 +79,14 @@ class _MyHomePageState extends State<MyHomePage> {
         leading: Icon(Icons.notification_add,color: Colors.amber)
       ),
       //one way
-      body: Container(
-        
-        child: Stack(
-          children: [
-           
-            SizedBox(
-            height:300,
-            child: Center(
-              child: Text("Flutter"))),
-            ListTile(
-              leading: Icon(Icons.join_full),
-              tileColor: Colors.red,
-              title: Text("Flutter"),
-              trailing : Text("asdsad"),
-              onTap: () {
-                print("Hello World");
-              },
-            )
-
-          ],
-        ),
-      ),
+      body: Wrap(
+        children: [
+          Text("dadsdsadsddsddsdsdsddsdssdds"),
+           Text("dadsdsadsddsddsdsdsddsdssdds"),
+            Text("dadsdsadsddsddsdsdsddsdssdds"),
+             Text("dadsdsadsddsddsdsdsddsdssdds"),
+              Text("dadsdsadsddsddsdsdsddsdssdds"),
+      ]),
       
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
