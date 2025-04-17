@@ -20,7 +20,12 @@ class MyApp extends StatelessWidget {
           ),
        
       //scaffold
-      home: Scaffold(),
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Flutter App'),
+          centerTitle: true,
+        ),
+      ),
     );
   }
 }
