@@ -26,11 +26,21 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
 
         ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            print("Floating Action Button Pressed");
-          },
-          child: const Icon(Icons.add),
+        floatingActionButton: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            FloatingActionButton(
+              onPressed: () {
+                print("Floating Action Button Pressed");
+              },
+              child: const Icon(Icons.add),
+            ), FloatingActionButton(
+              onPressed: () {
+                print("Floating Action Button Pressed");
+              },
+              child: const Icon(Icons.add),
+            ),
+          ],
         ),
         bottomNavigationBar: NavigationBar(
           destinations: [
