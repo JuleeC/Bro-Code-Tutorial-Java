@@ -4,6 +4,7 @@ void main() {
   runApp(const MyApp());
 }
 
+String title = "Flutter App";
 //stateless widget
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
       home: SafeArea(
         child: Scaffold(
           appBar: AppBar(
-            title: const Text('Flutter App'),
+            title: Text(title),
             centerTitle: true,
           ),
           bottomNavigationBar: NavigationBar(
