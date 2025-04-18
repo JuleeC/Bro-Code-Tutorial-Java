@@ -20,59 +20,59 @@ class MyApp extends StatelessWidget {
           ),
        
       //scaffold
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Flutter App'),
-          centerTitle: true,
-
-        ),
-        drawer: Drawer(
-          child: Column(
+      home: SafeArea(
+        child: Scaffold(
+          appBar: AppBar(
+            title: const Text('Flutter App'),
+            centerTitle: true,
+        
+          ),
+          drawer: Drawer(
+            child: Column(
+              children: [
+                ListTile(
+                  leading: const Icon(Icons.home),
+                  title: const Text('Home'),
+                  onTap: () {
+                    print("Home Pressed");
+                  },
+                ),
+              ],
+            ),
+          ),
+          floatingActionButton: Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
-              DrawerHeader(child: Text("adas"),),
-              
-              ListTile(
-                leading: const Icon(Icons.home),
-                title: const Text('Home'),
-                onTap: () {
-                  print("Home Pressed");
+              FloatingActionButton(
+                onPressed: () {
+                  print("Floating Action Button Pressed");
                 },
+                child: const Icon(Icons.add),
+              ),
+              //like padding in that case
+              SizedBox(height: 10), 
+              FloatingActionButton(
+                onPressed: () {
+                  print("Floating Action Button Pressed");
+                },
+                child: const Icon(Icons.add),
               ),
             ],
           ),
-        ),
-        floatingActionButton: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            FloatingActionButton(
-              onPressed: () {
-                print("Floating Action Button Pressed");
-              },
-              child: const Icon(Icons.add),
-            ),
-            //like padding in that case
-            SizedBox(height: 10), 
-            FloatingActionButton(
-              onPressed: () {
-                print("Floating Action Button Pressed");
-              },
-              child: const Icon(Icons.add),
-            ),
-          ],
-        ),
-        bottomNavigationBar: NavigationBar(
-          destinations: [
-            NavigationDestination(
-              icon: Icon(Icons.home),
-              label: "Home"),
+          bottomNavigationBar: NavigationBar(
+            destinations: [
               NavigationDestination(
-              icon: Icon(Icons.percent),
-              label: "asd")],
-              selectedIndex: 1,
-              onDestinationSelected: (int value) {
-                print(value);
-              },),
-            
+                icon: Icon(Icons.home),
+                label: "Home"),
+                NavigationDestination(
+                icon: Icon(Icons.percent),
+                label: "asd")],
+                selectedIndex: 1,
+                onDestinationSelected: (int value) {
+                  print(value);
+                },),
+              
+        ),
       ),
     );
   }
