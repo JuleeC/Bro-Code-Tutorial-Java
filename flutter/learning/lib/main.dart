@@ -26,6 +26,15 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
 
         ),
+        drawer: Drawer(
+          child: ListTile(
+            leading: const Icon(Icons.home),
+            title: const Text('Home'),
+            onTap: () {
+              print("Home Pressed");
+            },
+          ),
+        ),
         floatingActionButton: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
