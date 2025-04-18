@@ -34,7 +34,10 @@ class MyApp extends StatelessWidget {
                 print("Floating Action Button Pressed");
               },
               child: const Icon(Icons.add),
-            ), FloatingActionButton(
+            ),
+            //like padding in that case
+            SizedBox(height: 10), 
+            FloatingActionButton(
               onPressed: () {
                 print("Floating Action Button Pressed");
               },
