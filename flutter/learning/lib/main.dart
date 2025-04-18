@@ -26,6 +26,12 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
 
         ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            print("Floating Action Button Pressed");
+          },
+          child: const Icon(Icons.add),
+        ),
         bottomNavigationBar: NavigationBar(
           destinations: [
             NavigationDestination(
