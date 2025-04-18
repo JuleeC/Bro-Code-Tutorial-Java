@@ -27,38 +27,8 @@ class MyApp extends StatelessWidget {
             centerTitle: true,
         
           ),
-          drawer: Drawer(
-            child: Column(
-              children: [
-                ListTile(
-                  leading: const Icon(Icons.home),
-                  title: const Text('Home'),
-                  onTap: () {
-                    print("Home Pressed");
-                  },
-                ),
-              ],
-            ),
-          ),
-          floatingActionButton: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              FloatingActionButton(
-                onPressed: () {
-                  print("Floating Action Button Pressed");
-                },
-                child: const Icon(Icons.add),
-              ),
-              //like padding in that case
-              SizedBox(height: 10), 
-              FloatingActionButton(
-                onPressed: () {
-                  print("Floating Action Button Pressed");
-                },
-                child: const Icon(Icons.add),
-              ),
-            ],
-          ),
+          
+       
           bottomNavigationBar: NavigationBar(
             destinations: [
               NavigationDestination(
