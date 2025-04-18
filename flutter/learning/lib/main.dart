@@ -48,6 +48,13 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text(title!),
           centerTitle: true,
         ),
+        body: currentIndex == 0
+            ? Center(
+                child: Text("Home"),
+              )
+            : Center(
+                child: Text("Profile"),
+              ),
         bottomNavigationBar: NavigationBar(
           destinations: [
             NavigationDestination(
