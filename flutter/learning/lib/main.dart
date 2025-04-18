@@ -27,12 +27,18 @@ class MyApp extends StatelessWidget {
 
         ),
         drawer: Drawer(
-          child: ListTile(
-            leading: const Icon(Icons.home),
-            title: const Text('Home'),
-            onTap: () {
-              print("Home Pressed");
-            },
+          child: Column(
+            children: [
+              DrawerHeader(child: Text("adas"),),
+              
+              ListTile(
+                leading: const Icon(Icons.home),
+                title: const Text('Home'),
+                onTap: () {
+                  print("Home Pressed");
+                },
+              ),
+            ],
           ),
         ),
         floatingActionButton: Column(
