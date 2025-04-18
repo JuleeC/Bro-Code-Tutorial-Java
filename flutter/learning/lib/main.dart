@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(const MyApp());
 }
-
-String title = "Flutter App";
+//calls an exception when the title is null
+String? title = "Flutter App";
 //stateless widget
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       home: SafeArea(
         child: Scaffold(
           appBar: AppBar(
-            title: Text(title),
+            title: Text(title!),
             centerTitle: true,
           ),
           bottomNavigationBar: NavigationBar(
