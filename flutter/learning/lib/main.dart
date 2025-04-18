@@ -39,6 +39,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  // here always refresh the widget
+  int currentIndex = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -52,10 +54,15 @@ class _MyHomePageState extends State<MyHomePage> {
               icon: Icon(Icons.home),
               label: "Home"),
               NavigationDestination(
-              icon: Icon(Icons.percent),
-              label: "asd")],
-              selectedIndex: 1,
+              icon: Icon(Icons.person),
+              label: "Profile"),],
+              selectedIndex: currentIndex,
               onDestinationSelected: (int value) {
+                
+                setState(() {
+                  //refresh the widget
+                  currentIndex = value;
+                });
                 print(value);
               },),
             
