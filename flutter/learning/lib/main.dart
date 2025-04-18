@@ -25,10 +25,7 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
             title: const Text('Flutter App'),
             centerTitle: true,
-        
           ),
-          
-       
           bottomNavigationBar: NavigationBar(
             destinations: [
               NavigationDestination(
