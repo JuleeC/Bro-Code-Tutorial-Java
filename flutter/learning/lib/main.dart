@@ -48,6 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text(title!),
           centerTitle: true,
         ),
+        //if statement but dynamic
         body: currentIndex == 0
             ? Center(
                 child: Text("Home"),
