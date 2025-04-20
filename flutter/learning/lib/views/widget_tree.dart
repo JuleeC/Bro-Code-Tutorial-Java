@@ -19,6 +19,7 @@ class WidgetTree extends StatelessWidget {
           centerTitle: true,
         ),
         //if statement but dynamic
+        body:pages.elementAt(0),
         bottomNavigationBar: NavbarWidget()
             
     );
