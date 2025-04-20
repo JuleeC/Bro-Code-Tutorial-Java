@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning/widgets/navbar_widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -7,7 +8,7 @@ void main() {
 //stateful widget = can refresh
 //stateless = cant refresh
 //setsate = to refresh the widget
-
+//splitting wideget into smaller widgets
 //calls an exception when the title is null
 String? title = "Flutter App";
 //stateless widget
@@ -40,7 +41,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   // here always refresh the widget
-  int currentIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,30 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
           centerTitle: true,
         ),
         //if statement but dynamic
-        body: currentIndex == 0
-            ? Center(
-                child: Text("Home"),
-              )
-            : Center(
-                child: Text("Profile"),
-              ),
-        bottomNavigationBar: NavigationBar(
-          destinations: [
-            NavigationDestination(
-              icon: Icon(Icons.home),
-              label: "Home"),
-              NavigationDestination(
-              icon: Icon(Icons.person),
-              label: "Profile"),],
-              selectedIndex: currentIndex,
-              onDestinationSelected: (int value) {
-                
-                setState(() {
-                  //refresh the widget
-                  currentIndex = value;
-                });
-                print(value);
-              },),
+        bottomNavigationBar: NavbarWidget()
             
       );
       
