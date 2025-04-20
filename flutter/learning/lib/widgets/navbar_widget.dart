@@ -27,6 +27,6 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                   currentIndex = value;
                 });
                 print(value);
-              },),
+              },);
   }
 }

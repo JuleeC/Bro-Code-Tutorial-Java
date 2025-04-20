@@ -32,28 +32,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
 
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
 
-class _MyHomePageState extends State<MyHomePage> {
-  // here always refresh the widget
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: Text(title!),
-          centerTitle: true,
-        ),
-        //if statement but dynamic
-        bottomNavigationBar: NavbarWidget()
-            
-      );
-      
-  }
-}
 
