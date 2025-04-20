@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learning/widgets/navbar_widget.dart';
+import 'package:learning/views/widget_tree.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
           ),
        
       //scaffold
-      home: MyHomePage(),
+      home: WidgetTree(),
     );
   }
 }
