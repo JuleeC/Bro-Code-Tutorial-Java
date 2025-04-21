@@ -25,11 +25,15 @@ class _ProfilePageState extends State<ProfilePage> {
           ),
 
           Text(controller.text),
-          Checkbox(value: isChecked, onChanged: (bool? value) {
-            setState(() {
-              isChecked = value;
-            });
-          },),
+          Text(controller.text),
+          Checkbox(
+            value: isChecked,
+            onChanged: (bool? value) {
+              setState(() {
+                isChecked = value;
+              });
+            },
+          ),
         ],
       ),
     );
