@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning/data/notifiers.dart';
 import 'package:learning/views/pages/home_page.dart';
 import '../widgets/navbar_widget.dart';
 import 'package:learning/views/pages/profile_page.dart';
@@ -19,7 +20,9 @@ class WidgetTree extends StatelessWidget {
           centerTitle: true,
         ),
         //if statement but dynamic
-        body:pages.elementAt(0),
+        body:ValueListenableBuilder(valueListenable: selectedPageNotifier, builder: (context, selectedPage, child) {
+          return pages.elementAt(selectedPage);
+        },),
         bottomNavigationBar: NavbarWidget()
             
     );
