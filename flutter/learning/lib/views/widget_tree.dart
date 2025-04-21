@@ -18,6 +18,9 @@ class WidgetTree extends StatelessWidget {
         appBar: AppBar(
           title: Text("title"),
           centerTitle: true,
+          actions: [IconButton(onPressed: () {
+            
+          }, icon: Icon(Icons.light_mode))],
         ),
         //if statement but dynamic
         body:ValueListenableBuilder(valueListenable: selectedPageNotifier, builder: (context, selectedPage, child) {
