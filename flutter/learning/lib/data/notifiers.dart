@@ -2,4 +2,4 @@
 //ValueListenableBuilder : listen to the data
 import 'package:flutter/material.dart';
 
-ValueNotifier<int> slectedPageNotifier = ValueNotifier(0);
+ValueNotifier<int> selectedPageNotifier = ValueNotifier(0);
