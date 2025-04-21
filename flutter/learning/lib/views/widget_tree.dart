@@ -19,8 +19,10 @@ class WidgetTree extends StatelessWidget {
           title: Text("title"),
           centerTitle: true,
           actions: [IconButton(onPressed: () {
-            
-          }, icon: Icon(Icons.light_mode))],
+            isDarkModeNotifier.value = !isDarkModeNotifier.value;
+          }, icon: ValueListenableBuilder(valueListenable: isDarkModeNotifier, builder: (context, isDarkMode, child) {
+            return Icon(isDarkMode ? Icons.dark_mode: Icons.light_mode);
+          },))],
         ),
         //if statement but dynamic
         body:ValueListenableBuilder(valueListenable: selectedPageNotifier, builder: (context, selectedPage, child) {
