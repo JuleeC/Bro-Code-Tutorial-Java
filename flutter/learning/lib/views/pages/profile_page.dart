@@ -9,25 +9,28 @@ class ProfilePage extends StatefulWidget {
 
 class _ProfilePageState extends State<ProfilePage> {
   TextEditingController controller = TextEditingController();
+  bool? isChecked = false;
   @override
   Widget build(BuildContext context) {
-    
     return Padding(
       padding: const EdgeInsets.all(16.0),
       child: Column(
-        children: [ 
-          TextField(decoration:
-           InputDecoration(
-              border:OutlineInputBorder(),),
+        children: [
+          TextField(
+            decoration: InputDecoration(border: OutlineInputBorder()),
             controller: controller,
             onEditingComplete: () {
-              setState(() {
-                
-              });
-            },),
-          
-          Text(controller.text)
-        ]
+              setState(() {});
+            },
+          ),
+
+          Text(controller.text),
+          Checkbox(value: isChecked, onChanged: (bool? value) {
+            setState(() {
+              isChecked = value;
+            });
+          },),
+        ],
       ),
     );
   }

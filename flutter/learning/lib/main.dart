@@ -12,6 +12,7 @@ void main() {
 //splitting wideget into smaller widgets
 //calls an exception when the title is null
 String? title = "Flutter App";
+
 //stateless widget
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -22,27 +23,19 @@ class MyApp extends StatelessWidget {
     return ValueListenableBuilder(
       valueListenable: isDarkModeNotifier,
       builder: (context, value, child) {
-        return MaterialApp (
+        return MaterialApp(
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
             colorScheme: ColorScheme.fromSeed(
               seedColor: Colors.teal,
               brightness: value ? Brightness.dark : Brightness.light,
             ),
-
           ),
           home: WidgetTree(),
         );
       },
-    
-      
-       
+
       //scaffold
-      
     );
   }
 }
-
-
-
-
