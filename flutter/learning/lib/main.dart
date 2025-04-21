@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
       valueListenable: isDarkModeNotifier,
       builder: (context, value, child) {
         return MaterialApp(
+          title: title!,
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
             colorScheme: ColorScheme.fromSeed(
