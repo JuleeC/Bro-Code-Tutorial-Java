@@ -11,7 +11,7 @@ class _ProfilePageState extends State<ProfilePage> {
   TextEditingController controller = TextEditingController();
   bool? isChecked = false;
   bool isSwitched = false;
-  double sliderValue = 0.0; 
+  double sliderValue = 10.0; 
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -60,10 +60,14 @@ class _ProfilePageState extends State<ProfilePage> {
               });
             },
           ),
-          Slider(value: sliderValue, onChanged: (double value) {
+          Slider(value: sliderValue,
+          max: 100.0,
+          min: 10.0,
+          onChanged: (double value) {
             setState(() {
               sliderValue = value;
             });
+            print(value);
           }),
         ],
       ),

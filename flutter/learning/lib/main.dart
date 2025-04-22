@@ -1,9 +1,17 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:learning/data/notifiers.dart';
 import 'package:learning/views/widget_tree.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    DevicePreview(
+      builder: (context) {
+        return const MyApp();
+      },
+    ),
+    
+  );
 }
 
 //stateful widget = can refresh
