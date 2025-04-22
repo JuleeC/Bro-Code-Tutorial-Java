@@ -20,9 +20,8 @@ class _ProfilePageState extends State<ProfilePage> {
           TextField(
             decoration: InputDecoration(border: OutlineInputBorder()),
             controller: controller,
-            onEditingComplete: () {
-              setState(() {});
-            },
+            onEditingComplete: () => setState(() {}),
+            
           ),
 
           Text(controller.text),
