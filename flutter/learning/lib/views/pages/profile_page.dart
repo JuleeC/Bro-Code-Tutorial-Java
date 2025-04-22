@@ -28,7 +28,16 @@ class _ProfilePageState extends State<ProfilePage> {
           Text(controller.text),
           Text(controller.text),
           Checkbox(
+            tristate: true,
             value: isChecked,
+            onChanged: (bool? value) {
+              setState(() {
+                isChecked = value;
+              });
+            },
+          ), CheckboxListTile(
+            value: isChecked,
+            title: Text("Check me"),
             onChanged: (bool? value) {
               setState(() {
                 isChecked = value;
