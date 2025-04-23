@@ -70,8 +70,12 @@ class _ProfilePageState extends State<ProfilePage> {
               });
               print(value);
             }),
-            Image.asset( "assets/images/aes.jpg"),
-            Image.asset( "assets/images/aes.jpg"),
+            GestureDetector(
+              onTap: () {
+                print("Tapped");
+              }, 
+              child: Image.asset( "assets/images/aes.jpg")),
+            
           ],
         ),
       ),
