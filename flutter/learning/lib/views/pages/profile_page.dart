@@ -72,17 +72,17 @@ class _ProfilePageState extends State<ProfilePage> {
             }),
             InkWell(
               splashColor: Colors.red,
+            
               onTap: () {
                 print("Tapped");
               }, 
               child: Container(
-                
-                height: 200,
+                height: 50,
                 width: 200,
-                color: Colors.teal,
+                color: Colors.black,
               ),
               ),
-             
+            ElevatedButton(onPressed: () {}, child: Text("data")) 
           ],
         ),
       ),
