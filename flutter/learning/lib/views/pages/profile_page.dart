@@ -70,11 +70,13 @@ class _ProfilePageState extends State<ProfilePage> {
               });
               print(value);
             }),
-            GestureDetector(
+            InkWell(
+              splashColor: Colors.red,
               onTap: () {
                 print("Tapped");
               }, 
               child: Container(
+                
                 height: 200,
                 width: 200,
                 color: Colors.teal,
