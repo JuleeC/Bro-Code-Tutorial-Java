@@ -74,8 +74,13 @@ class _ProfilePageState extends State<ProfilePage> {
               onTap: () {
                 print("Tapped");
               }, 
-              child: Image.asset( "assets/images/aes.jpg")),
-            
+              child: Container(
+                height: 200,
+                width: 200,
+                color: Colors.teal,
+              ),
+              ),
+             
           ],
         ),
       ),
