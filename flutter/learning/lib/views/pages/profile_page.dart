@@ -11,7 +11,7 @@ class _ProfilePageState extends State<ProfilePage> {
   TextEditingController controller = TextEditingController();
   bool? isChecked = false;
   bool isSwitched = false;
-  double sliderValue = 10.0; 
+  double sliderValue = 10.0;
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -24,9 +24,8 @@ class _ProfilePageState extends State<ProfilePage> {
               decoration: InputDecoration(border: OutlineInputBorder()),
               controller: controller,
               onEditingComplete: () => setState(() {}),
-              
             ),
-      
+
             Text(controller.text),
             Text(controller.text),
             Checkbox.adaptive(
@@ -37,7 +36,8 @@ class _ProfilePageState extends State<ProfilePage> {
                   isChecked = value;
                 });
               },
-            ), CheckboxListTile.adaptive(
+            ),
+            CheckboxListTile.adaptive(
               tristate: true,
               value: isChecked,
               title: Text("Check me"),
@@ -47,11 +47,14 @@ class _ProfilePageState extends State<ProfilePage> {
                 });
               },
             ),
-            Switch.adaptive(value: isSwitched, onChanged: (bool value) {
-              setState(() {
-                isSwitched = value;
-              });
-            }),
+            Switch.adaptive(
+              value: isSwitched,
+              onChanged: (bool value) {
+                setState(() {
+                  isSwitched = value;
+                });
+              },
+            ),
             SwitchListTile.adaptive(
               value: isSwitched,
               title: Text("Switch me"),
@@ -61,28 +64,35 @@ class _ProfilePageState extends State<ProfilePage> {
                 });
               },
             ),
-            Slider(value: sliderValue,
-            max: 100.0,
-            min: 10.0,
-            onChanged: (double value) {
-              setState(() {
-                sliderValue = value;
-              });
-              print(value);
-            }),
+            Slider(
+              value: sliderValue,
+              max: 100.0,
+              min: 10.0,
+              onChanged: (double value) {
+                setState(() {
+                  sliderValue = value;
+                });
+                print(value);
+              },
+            ),
             InkWell(
               splashColor: Colors.red,
-            
+
               onTap: () {
                 print("Tapped");
-              }, 
-              child: Container(
-                height: 50,
-                width: 200,
-                color: Colors.black,
-              ),
-              ),
-            ElevatedButton(onPressed: () {}, child: Text("data")) 
+              },
+              child: Container(height: 50, width: 200, color: Colors.black),
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.teal),
+              child: Text("data"),
+            ),
+            ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.teal),
+              child: Text("data"),
+            ),
           ],
         ),
       ),
