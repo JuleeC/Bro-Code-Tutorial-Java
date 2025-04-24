@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //materias app
+    //material app
     return ValueListenableBuilder(
       valueListenable: isDarkModeNotifier,
       builder: (context, value, child) {
