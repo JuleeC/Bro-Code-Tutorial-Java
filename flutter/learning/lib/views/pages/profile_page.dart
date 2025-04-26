@@ -20,6 +20,15 @@ class _ProfilePageState extends State<ProfilePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            DropdownButton(
+              items: [DropdownMenuItem(child: Text("data"),),
+              DropdownMenuItem(child: Text("dataa"),),
+              DropdownMenuItem(child: Text("dataaa"),),],
+              onChanged:(value) {
+                
+              },
+            ),
+
             TextField(
               decoration: InputDecoration(border: OutlineInputBorder()),
               controller: controller,
@@ -92,21 +101,24 @@ class _ProfilePageState extends State<ProfilePage> {
               onPressed: () {},
               style: ElevatedButton.styleFrom(backgroundColor: Colors.teal),
               child: Text("data"),
-            ),TextButton(
+            ),
+            TextButton(
               onPressed: () {},
-              style:TextButton.styleFrom(backgroundColor: Colors.teal),
+              style: TextButton.styleFrom(backgroundColor: Colors.teal),
               child: Text("data"),
-            ),FilledButton(
+            ),
+            FilledButton(
               onPressed: () {},
               style: FilledButton.styleFrom(backgroundColor: Colors.teal),
               child: Text("data"),
-            ),OutlinedButton(
+            ),
+            OutlinedButton(
               onPressed: () {},
               style: OutlinedButton.styleFrom(backgroundColor: Colors.teal),
               child: Text("data"),
-            ),CloseButton(
-              onPressed: () {},
-            ),BackButton(),
+            ),
+            CloseButton(onPressed: () {}),
+            BackButton(),
           ],
         ),
       ),
