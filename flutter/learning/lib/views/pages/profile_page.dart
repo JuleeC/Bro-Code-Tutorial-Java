@@ -100,6 +100,10 @@ class _ProfilePageState extends State<ProfilePage> {
               onPressed: () {},
               style: FilledButton.styleFrom(backgroundColor: Colors.teal),
               child: Text("data"),
+            ),OutlinedButton(
+              onPressed: () {},
+              style: OutlinedButton.styleFrom(backgroundColor: Colors.teal),
+              child: Text("data"),
             ),
           ],
         ),
