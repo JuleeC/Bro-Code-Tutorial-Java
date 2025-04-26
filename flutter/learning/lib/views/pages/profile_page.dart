@@ -12,6 +12,7 @@ class _ProfilePageState extends State<ProfilePage> {
   bool? isChecked = false;
   bool isSwitched = false;
   double sliderValue = 10.0;
+  String? menuItem;
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -21,12 +22,20 @@ class _ProfilePageState extends State<ProfilePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             DropdownButton(
-              items: [DropdownMenuItem(child: Text("data"),),
-              DropdownMenuItem(child: Text("dataa"),),
-              DropdownMenuItem(child: Text("dataaa"),),],
-              onChanged:(value) {
+              value: menuItem,
+              items: [
+                DropdownMenuItem(value: "e1", child: Text("e11")),
+                DropdownMenuItem(value: "e2", child: Text("e22")),
+                DropdownMenuItem(value: "e3", child: Text("e33")),
+              ],
+              onChanged: (String? value) {
+                setState(() {
+                  menuItem = value;
+                });
+              
                 
               },
+
             ),
 
             TextField(
