@@ -6,7 +6,7 @@ import 'package:learning/views/pages/profile_page.dart';
 
 List<Widget> pages = [
   HomePage(),
-  ProfilePage(),
+  SettingsPage(),
 ];
 
 class WidgetTree extends StatelessWidget {
