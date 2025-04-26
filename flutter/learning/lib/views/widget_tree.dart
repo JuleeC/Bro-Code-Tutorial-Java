@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:learning/data/notifiers.dart';
 import 'package:learning/views/pages/home_page.dart';
 import 'package:learning/views/pages/profile_page.dart';
-import 'package:learning/views/pages/settings.dart';
+import 'package:learning/views/pages/settings_page.dart';
 import '../widgets/navbar_widget.dart';
 
 List<Widget> pages = [HomePage(), ProfilePage()];
