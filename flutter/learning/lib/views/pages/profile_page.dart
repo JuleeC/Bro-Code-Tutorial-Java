@@ -104,7 +104,9 @@ class _ProfilePageState extends State<ProfilePage> {
               onPressed: () {},
               style: OutlinedButton.styleFrom(backgroundColor: Colors.teal),
               child: Text("data"),
-            ),
+            ),CloseButton(
+              onPressed: () {},
+            ),BackButton(),
           ],
         ),
       ),
