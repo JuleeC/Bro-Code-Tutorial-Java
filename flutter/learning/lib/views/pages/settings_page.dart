@@ -16,7 +16,9 @@ class _SettingsPageState extends State<SettingsPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Settings Page")),
+      appBar: AppBar(title: Text("Settings Page"),
+      //remove the back button
+      automaticallyImplyLeading: false,),
       body: SingleChildScrollView(
         child: Column(
           children: [
