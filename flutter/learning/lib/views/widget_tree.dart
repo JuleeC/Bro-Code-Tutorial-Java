@@ -30,7 +30,8 @@ class WidgetTree extends StatelessWidget {
           ),
           IconButton(
             onPressed: () {
-              Navigator.push(
+              // cant go back to the previous page
+              Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(
                   builder: (context) {
