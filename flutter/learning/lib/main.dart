@@ -1,7 +1,8 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:learning/data/notifiers.dart';
-import 'package:learning/views/widget_tree.dart';
+import 'package:learning/views/pages/welcome_page.dart';
+
 
 void main() {
   runApp(
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
               brightness: value ? Brightness.dark : Brightness.light,
             ),
           ),
-          home: WidgetTree(),
+          home:WelcomePage(),
         );
       },
       //scaffold
