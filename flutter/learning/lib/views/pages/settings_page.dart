@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
+
 class SettingsPage extends StatefulWidget {
-  const SettingsPage({super.key});
+  const SettingsPage({super.key, required this.title});
+  final String title;
 
   @override
   State<SettingsPage> createState() => _SettingsPageState();
@@ -17,10 +19,11 @@ class _SettingsPageState extends State<SettingsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Settings Page"),
+        title: Text(widget.title),
+        
        
         //automaticallyImplyLeading: false, //this will remove the back button
-        automaticallyImplyLeading: false,
+        automaticallyImplyLeading: true,
       ),
       body: SingleChildScrollView(
         child: Column(

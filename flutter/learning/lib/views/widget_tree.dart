@@ -31,11 +31,11 @@ class WidgetTree extends StatelessWidget {
           IconButton(
             onPressed: () {
               // cant go back to the previous page
-              Navigator.pushReplacement(
+              Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) {
-                    return SettingsPage();
+                    return SettingsPage(title: "Settings",);
                   },
                 ),
               );
