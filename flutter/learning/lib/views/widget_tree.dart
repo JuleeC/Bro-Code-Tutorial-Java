@@ -28,11 +28,19 @@ class WidgetTree extends StatelessWidget {
               },
             ),
           ),
-          IconButton(onPressed: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) {
-              return SettingsPage();
-            },));
-          }, icon: Icon(Icons.settings)),
+          IconButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return SettingsPage();
+                  },
+                ),
+              );
+            },
+            icon: Icon(Icons.settings),
+          ),
         ],
       ),
       //if statement but dynamic
