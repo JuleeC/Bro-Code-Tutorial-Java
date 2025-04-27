@@ -13,18 +13,20 @@ class WelcomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-           HeroWidget(), 
-            FilledButton(onPressed: () {
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) {
-                    return WidgetTree();
-                  },
-                ),
-              );
-              
-            }, child: Text("Login")),
+            HeroWidget(),
+            FilledButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return WidgetTree();
+                    },
+                  ),
+                );
+              },
+              child: Text("Login"),
+            ),
           ],
         ),
       ),

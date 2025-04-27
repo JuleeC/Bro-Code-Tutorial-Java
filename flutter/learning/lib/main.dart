@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:learning/data/notifiers.dart';
 import 'package:learning/views/pages/welcome_page.dart';
 
-
 void main() {
   runApp(
     DevicePreview(
@@ -11,7 +10,6 @@ void main() {
         return const MyApp();
       },
     ),
-    
   );
 }
 
@@ -41,7 +39,7 @@ class MyApp extends StatelessWidget {
               brightness: value ? Brightness.dark : Brightness.light,
             ),
           ),
-          home:WelcomePage(),
+          home: WelcomePage(),
         );
       },
       //scaffold

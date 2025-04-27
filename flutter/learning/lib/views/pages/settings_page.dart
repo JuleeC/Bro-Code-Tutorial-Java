@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key, required this.title});
   final String title;
@@ -20,8 +19,7 @@ class _SettingsPageState extends State<SettingsPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
-        
-       
+
         //automaticallyImplyLeading: false, //this will remove the back button
         automaticallyImplyLeading: true,
       ),
