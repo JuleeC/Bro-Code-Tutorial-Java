@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning/data/constants.dart';
 import 'package:learning/widgets/hero_widget.dart';
 
 class HomePage extends StatelessWidget {
@@ -20,10 +21,8 @@ class HomePage extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      "Basic Layout",
-                      style:  ,                  ),
-                    Text("description"),
+                    Text("Basic Layout", style: KTextStyle.titleTealText),
+                    Text("description", style: KTextStyle.descriptionText),
                   ],
                 ),
               ),
