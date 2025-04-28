@@ -38,7 +38,8 @@ class _SettingsPageState extends State<SettingsPage> {
               },
               child: Text("open Snackbar"),
             ),
-            Divider(color: Colors.teal, thickness: 5.0, endIndent: 200.0,),
+            Divider(color: Colors.teal, thickness: 5.0, endIndent: 200.0),
+            Container(height:50.0, child:VerticalDivider(color: Colors.teal, thickness: 5.0, indent: 20.0, endIndent: 20.0,)),
             ElevatedButton(
               onPressed: () {
                 showDialog(
@@ -48,9 +49,12 @@ class _SettingsPageState extends State<SettingsPage> {
                       title: Text("Alert Title"),
                       content: Text("Alert Dialog"),
                       actions: [
-                        FilledButton(onPressed: () {
-                          Navigator.pop(context);
-                        }, child: Text("Close")),
+                        FilledButton(
+                          onPressed: () {
+                            Navigator.pop(context);
+                          },
+                          child: Text("Close"),
+                        ),
                       ],
                     );
                   },
