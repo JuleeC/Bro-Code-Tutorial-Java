@@ -26,6 +26,18 @@ class _SettingsPageState extends State<SettingsPage> {
       body: SingleChildScrollView(
         child: Column(
           children: [
+            ElevatedButton(
+              onPressed: () {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    duration: Duration(seconds: 5),
+                    content: Text("Snackbar"),
+                    behavior: SnackBarBehavior.floating,
+                  ),
+                );
+              },
+              child: Text("open Snackbar"),
+            ),
             TextField(
               controller: controller,
               decoration: InputDecoration(
@@ -35,7 +47,7 @@ class _SettingsPageState extends State<SettingsPage> {
               ),
             ),
             CheckboxListTile(
-              title: Text("Check me"),
+              title: Text(""),
               value: isChecked,
               onChanged: (value) {
                 setState(() {
