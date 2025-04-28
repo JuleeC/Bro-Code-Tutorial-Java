@@ -13,7 +13,12 @@ class HomePage extends StatelessWidget {
           HeroWidget(),
           Padding(
             padding: EdgeInsets.symmetric(vertical: 10.0),
-            child: Card(child: Padding(padding: EdgeInsets.all(20.0))),
+            child: Card(
+              child: Padding(
+                padding: EdgeInsets.all(20.0),
+                child: Column(children: [Text("Basic Layout"),Text("description")]),
+              ),
+            ),
           ),
         ],
       ),
