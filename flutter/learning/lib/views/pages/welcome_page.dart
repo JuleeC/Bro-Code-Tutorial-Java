@@ -13,12 +13,14 @@ class WelcomePage extends StatelessWidget {
         padding: const EdgeInsets.all(20.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             Lottie.asset(
               "assets/lotties/welcome.json",
               width: 200,
               height: 200,
             ),
+            Text("Flutter App", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 50.0, letterSpacing: 50.0)),
             FilledButton(
               onPressed: () {
                 Navigator.push(
