@@ -19,7 +19,12 @@ class HomePage extends StatelessWidget {
                 padding: EdgeInsets.all(20.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [Text("Basic Layout",style: TextStyle(color: Colors.teal,fontSize: 18.0,fontWeight: FontWeight.bold,)), Text("description")],
+                  children: [
+                    Text(
+                      "Basic Layout",
+                      style:  ,                  ),
+                    Text("description"),
+                  ],
                 ),
               ),
             ),
