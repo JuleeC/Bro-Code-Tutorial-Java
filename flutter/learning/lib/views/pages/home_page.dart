@@ -17,7 +17,10 @@ class HomePage extends StatelessWidget {
             child: Card(
               child: Padding(
                 padding: EdgeInsets.all(20.0),
-                child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [Text("Basic Layout"),Text("description")]),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [Text("Basic Layout",style: TextStyle(color: Colors.teal,fontSize: 18.0,fontWeight: FontWeight.bold,)), Text("description")],
+                ),
               ),
             ),
           ),
