@@ -38,6 +38,25 @@ class _SettingsPageState extends State<SettingsPage> {
               },
               child: Text("open Snackbar"),
             ),
+            ElevatedButton(
+              onPressed: () {
+                showDialog(
+                  context: context,
+                  builder: (context) {
+                    return AlertDialog(
+                      title: Text("Alert Title"),
+                      content: Text("Alert Dialog"),
+                      actions: [
+                        FilledButton(onPressed: () {
+                          
+                        }, child: Text("Close")),
+                      ],
+                    );
+                  },
+                );
+              },
+              child: Text("open Snackbar"),
+            ),
             TextField(
               controller: controller,
               decoration: InputDecoration(
