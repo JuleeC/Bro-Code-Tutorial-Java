@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning/data/notifiers.dart';
 import 'package:learning/views/pages/welcome_page.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -13,6 +14,7 @@ class ProfilePage extends StatelessWidget {
           ListTile(
             title: Text("Logout"),
             onTap: () {
+              selectedPageNotifier.value = 0;
               Navigator.push(
                 context,
                 MaterialPageRoute(
