@@ -37,7 +37,7 @@ class WelcomePage extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return WidgetTree();
+                      //return WidgetTree();
                     },
                   ),
                 );
@@ -47,7 +47,7 @@ class WelcomePage extends StatelessWidget {
               ),
               child: Text("Get Started"),
             ),
-            FilledButton(
+            TextButton(
               onPressed: () {
                 Navigator.pushReplacement(
                   context,
