@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning/widgets/hero_widget.dart';
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
 
@@ -8,7 +9,11 @@ class LoginPage extends StatelessWidget {
       appBar: AppBar(),
       body: Padding(
         padding: const EdgeInsets.all(10.0),
-        child: Column(),
+        child: Column(
+          children: [
+            HeroWidget(),
+          ],
+        ),
       ),
     );
   }
