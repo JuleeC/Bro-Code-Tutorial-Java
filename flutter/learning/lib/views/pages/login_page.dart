@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:learning/widgets/hero_widget.dart';
-class LoginPage extends StatelessWidget {
+
+TextEditingController controller = TextEditingController();
+
+class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
 
+  @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,6 +20,15 @@ class LoginPage extends StatelessWidget {
         child: Column(
           children: [
             HeroWidget(title: "Login"),
+            
+            TextField(
+              controller: controller,
+              decoration: InputDecoration(
+                labelText: "Enter your name",
+                hintText: "Name",
+                border: OutlineInputBorder(),
+              ),
+            ),
           ],
         ),
       ),
