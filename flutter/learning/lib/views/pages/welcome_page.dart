@@ -13,24 +13,27 @@ class WelcomePage extends StatelessWidget {
         padding: const EdgeInsets.all(20.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.end,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Lottie.asset(
               "assets/lotties/welcome.json",
               width: 200,
               height: 200,
             ),
-            Text(
-              "Flutter App",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 50.0,
-                letterSpacing: 50.0,
+            FittedBox(
+              child: Text(
+                "Flutter App",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 50.0,
+                  letterSpacing: 50.0,
+                ),
               ),
             ),
+            SizedBox(height: 20.0),
             FilledButton(
               onPressed: () {
-                Navigator.push(
+                Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
                     builder: (context) {
@@ -39,6 +42,24 @@ class WelcomePage extends StatelessWidget {
                   ),
                 );
               },
+              style: FilledButton.styleFrom(
+                minimumSize: Size(double.infinity, 40.0),
+              ),
+              child: Text("Get Started"),
+            ),
+            FilledButton(
+              onPressed: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return WidgetTree();
+                    },
+                  ),
+                );
+              }, style: FilledButton.styleFrom(
+                minimumSize: Size(double.infinity, 40.0),
+              ),
               child: Text("Login"),
             ),
           ],
