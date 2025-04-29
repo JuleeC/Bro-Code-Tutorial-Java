@@ -20,7 +20,14 @@ class WelcomePage extends StatelessWidget {
               width: 200,
               height: 200,
             ),
-            Text("Flutter App", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 50.0, letterSpacing: 50.0)),
+            Text(
+              "Flutter App",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 50.0,
+                letterSpacing: 50.0,
+              ),
+            ),
             FilledButton(
               onPressed: () {
                 Navigator.push(
