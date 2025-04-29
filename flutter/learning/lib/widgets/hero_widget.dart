@@ -20,11 +20,17 @@ class HeroWidget extends StatelessWidget {
               colorBlendMode: BlendMode.darken,
               width: double.infinity,
               height: 200.0,
-              
             ),
           ),
         ),
-        Text(title),
+        Text(
+          title,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 50.0,
+            letterSpacing: 50.0,
+          ),
+        ),
       ],
     );
   }
