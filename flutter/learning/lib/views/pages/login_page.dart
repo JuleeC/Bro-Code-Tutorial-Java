@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learning/widgets/hero_widget.dart';
 
-TextEditingController controller = TextEditingController();
-
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
 
@@ -11,18 +9,16 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  TextEditingController controller = TextEditingController();
+
+
   @override
   void dispose() {
-    // TODO: implement dispose
+    //when the widget is removed from the widget tree
     controller.dispose();
     super.dispose();
   }
-  @override
-  void initState() {
-    //when the widget is created
-    print("initState called");
-    super.initState();
-  }
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
