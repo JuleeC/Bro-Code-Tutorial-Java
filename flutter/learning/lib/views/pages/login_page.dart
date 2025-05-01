@@ -14,10 +14,13 @@ class _LoginPageState extends State<LoginPage> {
   @override
   void dispose() {
     // TODO: implement dispose
+    controller.dispose();
     super.dispose();
-  }@override
+  }
+  @override
   void initState() {
-    // TODO: implement dispose
+    //when the widget is created
+    print("initState called");
     super.initState();
   }
   @override
