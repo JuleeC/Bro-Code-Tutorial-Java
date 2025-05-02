@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learning/views/pages/login_page.dart';
 
-
 import 'package:lottie/lottie.dart';
 
 class WelcomePage extends StatelessWidget {
@@ -11,6 +10,7 @@ class WelcomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
+        // to make it scrollable
         child: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.all(20.0),
@@ -19,18 +19,6 @@ class WelcomePage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Lottie.asset(
-                  "assets/lotties/welcome.json",
-                  width: 200,
-                  height: 200,
-                ),Lottie.asset(
-                  "assets/lotties/welcome.json",
-                  width: 200,
-                  height: 200,
-                ),Lottie.asset(
-                  "assets/lotties/welcome.json",
-                  width: 200,
-                  height: 200,
-                ),Lottie.asset(
                   "assets/lotties/welcome.json",
                   width: 200,
                   height: 200,
@@ -72,7 +60,8 @@ class WelcomePage extends StatelessWidget {
                         },
                       ),
                     );
-                  }, style: FilledButton.styleFrom(
+                  },
+                  style: FilledButton.styleFrom(
                     minimumSize: Size(double.infinity, 40.0),
                   ),
                   child: Text("Login"),
