@@ -19,7 +19,7 @@ class _LoginPageState extends State<LoginPage> {
     controllerEmail.dispose();
     super.dispose();
   }
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +29,7 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           children: [
             HeroWidget(title: "Login"),
-            SizedBox(height: 20.0),  
+            SizedBox(height: 20.0),
             TextField(
               controller: controllerEmail,
               decoration: InputDecoration(
@@ -37,14 +37,15 @@ class _LoginPageState extends State<LoginPage> {
                 hintText: "Email",
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10.0),
-                                 ),
+                ),
               ),
               onEditingComplete: () {
                 setState(() {
-                 //
+                  //
                 });
               },
-            ),SizedBox(height: 10.0),  
+            ),
+            SizedBox(height: 10.0),
             TextField(
               controller: controllerPw,
               decoration: InputDecoration(
@@ -52,15 +53,15 @@ class _LoginPageState extends State<LoginPage> {
                 hintText: "Password",
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10.0),
-                 
                 ),
               ),
               onEditingComplete: () {
                 setState(() {
-                 //
+                  //
                 });
               },
-            ), SizedBox(height: 20.0),
+            ),
+            SizedBox(height: 20.0),
             FilledButton(
               onPressed: () {
                 Navigator.pushReplacement(
@@ -75,7 +76,7 @@ class _LoginPageState extends State<LoginPage> {
               style: FilledButton.styleFrom(
                 minimumSize: Size(double.infinity, 40.0),
               ),
-              child: Text("Get Started"),
+              child: Text("Login"),
             ),
           ],
         ),
