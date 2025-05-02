@@ -9,13 +9,14 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  TextEditingController controller = TextEditingController();
-
+  TextEditingController controllerPw = TextEditingController();
+  TextEditingController controllerEmail = TextEditingController();
 
   @override
   void dispose() {
     //when the widget is removed from the widget tree
-    controller.dispose();
+    controllerPw.dispose();
+    controllerEmail.dispose();
     super.dispose();
   }
   
@@ -24,17 +25,36 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       appBar: AppBar(),
       body: Padding(
-        padding: const EdgeInsets.all(10.0),
+        padding: const EdgeInsets.all(20.0),
         child: Column(
           children: [
             HeroWidget(title: "Login"),
-            
+            SizedBox(height: 20.0),  
             TextField(
-              controller: controller,
+              controller: controllerEmail,
               decoration: InputDecoration(
-                labelText: "Enter your name",
-                hintText: "Name",
-                border: OutlineInputBorder(),
+                labelText: "Enter your email",
+                hintText: "Email",
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                 
+                ),
+              ),
+              onEditingComplete: () {
+                setState(() {
+                 //
+                });
+              },
+            ),SizedBox(height: 10.0),  
+            TextField(
+              controller: controllerPw,
+              decoration: InputDecoration(
+                labelText: "Enter your Password",
+                hintText: "Password",
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                 
+                ),
               ),
               onEditingComplete: () {
                 setState(() {
