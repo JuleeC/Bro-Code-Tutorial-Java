@@ -37,8 +37,7 @@ class _LoginPageState extends State<LoginPage> {
                 hintText: "Email",
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10.0),
-                 
-                ),
+                                 ),
               ),
               onEditingComplete: () {
                 setState(() {
@@ -61,6 +60,22 @@ class _LoginPageState extends State<LoginPage> {
                  //
                 });
               },
+            ), SizedBox(height: 20.0),
+            FilledButton(
+              onPressed: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return LoginPage();
+                    },
+                  ),
+                );
+              },
+              style: FilledButton.styleFrom(
+                minimumSize: Size(double.infinity, 40.0),
+              ),
+              child: Text("Get Started"),
             ),
           ],
         ),
