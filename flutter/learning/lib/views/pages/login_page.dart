@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning/views/widget_tree.dart';
 import 'package:learning/widgets/hero_widget.dart';
 
 class LoginPage extends StatefulWidget {
@@ -62,13 +63,13 @@ class _LoginPageState extends State<LoginPage> {
               },
             ),
             SizedBox(height: 20.0),
-            FilledButton(
+            ElevatedButton(
               onPressed: () {
                 Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return LoginPage();
+                      return WidgetTree();
                     },
                   ),
                 );
