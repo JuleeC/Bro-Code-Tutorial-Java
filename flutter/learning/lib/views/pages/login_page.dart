@@ -12,6 +12,9 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   TextEditingController controllerPw = TextEditingController();
   TextEditingController controllerEmail = TextEditingController();
+  //example of using a controller to get the value of the text field
+  String confirmedEmail = "123";
+  String confirmedPw = "456";
 
   @override
   void dispose() {
@@ -65,14 +68,7 @@ class _LoginPageState extends State<LoginPage> {
             SizedBox(height: 20.0),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) {
-                      return WidgetTree();
-                    },
-                  ),
-                );
+                onLoginPressed();
               },
               style: FilledButton.styleFrom(
                 minimumSize: Size(double.infinity, 40.0),
@@ -83,5 +79,19 @@ class _LoginPageState extends State<LoginPage> {
         ),
       ),
     );
+  }
+
+  void onLoginPressed() {
+    if (confirmedEmail == controllerEmail.text && confirmedPw == controllerPw.text) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) {
+            return WidgetTree();
+          },
+        ),
+      );
+    }
+   
   }
 }
