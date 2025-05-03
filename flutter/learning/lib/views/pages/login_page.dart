@@ -41,8 +41,8 @@ class _LoginPageState extends State<LoginPage> {
               children: [
                 Lottie.asset(
                 "assets/lotties/welcome.json",
-                width: 200,
-                height: 200,
+                width: 250,
+                height: 250,
               ),
                 TextField(
                   controller: controllerEmail,
