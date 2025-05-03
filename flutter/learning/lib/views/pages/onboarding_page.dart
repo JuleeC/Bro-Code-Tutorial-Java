@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning/data/constants.dart';
 import 'package:lottie/lottie.dart';
 
 class OnboardingPage extends StatelessWidget {
@@ -22,7 +23,11 @@ class OnboardingPage extends StatelessWidget {
                 ),
 
                 SizedBox(height: 50.0),
-                Text("Flutter App is the wway to learn Flutter"),
+                Text(
+                  "Flutter App is the way to learn Flutter",
+                  style: KTextStyle.descriptionText,
+                  textAlign: TextAlign.justify,
+                ),
                 FilledButton(
                   onPressed: () {},
 
@@ -32,7 +37,6 @@ class OnboardingPage extends StatelessWidget {
                   child: Text("Next"),
                 ),
                 SizedBox(height: 150.0),
-                Text("Flutter App is the wway to learn Flutter"),
               ],
             ),
           ),
