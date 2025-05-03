@@ -3,6 +3,7 @@ import 'package:learning/data/notifiers.dart';
 import 'package:learning/views/pages/home_page.dart';
 import 'package:learning/views/pages/profile_page.dart';
 import 'package:learning/views/pages/settings_page.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../widgets/navbar_widget.dart';
 
 List<Widget> pages = [HomePage(), ProfilePage()];
@@ -18,7 +19,8 @@ class WidgetTree extends StatelessWidget {
         centerTitle: true,
         actions: [
           IconButton(
-            onPressed: () {
+            onPressed: ()async {
+              final SharedPreferences prefs = await SharedPreferences.getInstance();
               isDarkModeNotifier.value = !isDarkModeNotifier.value;
             },
             icon: ValueListenableBuilder(
