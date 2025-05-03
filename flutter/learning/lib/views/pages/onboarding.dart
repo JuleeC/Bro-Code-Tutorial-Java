@@ -4,9 +4,6 @@ import 'package:lottie/lottie.dart';
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({super.key});
 
-
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,27 +16,19 @@ class OnboardingPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Lottie.asset(
-                "assets/lotties/welcome.json",
-                width: 250,
-                height: 250,
-              ),
-                
+                  "assets/lotties/welcome.json",
+                  width: 250,
+                  height: 250,
+                ),
+
                 SizedBox(height: 20.0),
                 FilledButton(
-                  onPressed: () {
-                     Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) {
-                          return OnboardingPage(title: "Login");
-                        },
-                      ),
-                    );
-                  },
-                  style: FilledButton.styleFrom(
+                  onPressed: () {},
+
+                  style: ElevatedButton.styleFrom(
                     minimumSize: Size(double.infinity, 40.0),
                   ),
-                  child: Text(title),
+                  child: Text("default"),
                 ),
                 SizedBox(height: 150.0),
               ],
@@ -49,5 +38,4 @@ class OnboardingPage extends StatelessWidget {
       ),
     );
   }
-
 }
