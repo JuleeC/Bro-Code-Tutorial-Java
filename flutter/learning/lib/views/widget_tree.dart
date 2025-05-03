@@ -19,8 +19,10 @@ class WidgetTree extends StatelessWidget {
         centerTitle: true,
         actions: [
           IconButton(
-            onPressed: ()async {
-              final SharedPreferences prefs = await SharedPreferences.getInstance();
+            onPressed: () async {
+              final SharedPreferences prefs =
+                  await SharedPreferences.getInstance();
+              await prefs.setBool("repeat", true);
               isDarkModeNotifier.value = !isDarkModeNotifier.value;
             },
             icon: ValueListenableBuilder(
