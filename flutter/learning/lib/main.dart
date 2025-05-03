@@ -1,5 +1,6 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
+import 'package:learning/data/constants.dart';
 import 'package:learning/data/notifiers.dart';
 import 'package:learning/views/pages/welcome_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -39,7 +40,8 @@ class _MyAppState extends State<MyApp> {
 
   void initThemeMode() async{
     final SharedPreferences prefs = await SharedPreferences.getInstance();
-    final bool? repeat = prefs.getBool("repeat");
+    final bool? repeat = prefs.getBool(KConstants.themeModekKey);
+    isDarkModeNotifier.value = repeat ?? true;
   }
   @override
   Widget build(BuildContext context) {
