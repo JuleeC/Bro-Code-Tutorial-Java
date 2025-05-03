@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learning/data/constants.dart';
+import 'package:learning/views/pages/login_page.dart';
 import 'package:lottie/lottie.dart';
 
 class OnboardingPage extends StatelessWidget {
@@ -29,7 +30,16 @@ class OnboardingPage extends StatelessWidget {
                   textAlign: TextAlign.justify,
                 ),
                 FilledButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return LoginPage(title: "Register");
+                        },
+                      ),
+                    );
+                  },
 
                   style: ElevatedButton.styleFrom(
                     minimumSize: Size(double.infinity, 40.0),
