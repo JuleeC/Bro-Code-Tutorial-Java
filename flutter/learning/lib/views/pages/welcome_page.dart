@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learning/views/pages/login_page.dart';
-import 'package:learning/views/pages/onboarding.dart';
+import 'package:learning/views/pages/onboarding_page.dart';
 
 import 'package:lottie/lottie.dart';
 
@@ -41,7 +41,7 @@ class WelcomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) {
-                          return LoginPage(title: "Register");
+                          return OnboardingPage();
                         },
                       ),
                     );
@@ -58,7 +58,7 @@ class WelcomePage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) {
-                          return OnboardingPage();
+                          return LoginPage(title: "Login");
                         },
                       ),
                     );

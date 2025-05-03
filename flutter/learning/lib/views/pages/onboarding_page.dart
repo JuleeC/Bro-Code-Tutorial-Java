@@ -21,16 +21,18 @@ class OnboardingPage extends StatelessWidget {
                   height: 250,
                 ),
 
-                SizedBox(height: 20.0),
+                SizedBox(height: 50.0),
+                Text("Flutter App is the wway to learn Flutter"),
                 FilledButton(
                   onPressed: () {},
 
                   style: ElevatedButton.styleFrom(
                     minimumSize: Size(double.infinity, 40.0),
                   ),
-                  child: Text("default"),
+                  child: Text("Next"),
                 ),
                 SizedBox(height: 150.0),
+                Text("Flutter App is the wway to learn Flutter"),
               ],
             ),
           ),
