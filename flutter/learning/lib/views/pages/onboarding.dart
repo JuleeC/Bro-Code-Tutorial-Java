@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
 class OnboardingPage extends StatelessWidget {
-  const OnboardingPage({super.key, required this.title});
+  const OnboardingPage({super.key});
 
-  final String title;
+
 
 
   @override
