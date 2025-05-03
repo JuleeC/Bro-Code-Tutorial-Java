@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:learning/views/widget_tree.dart';
 import 'package:lottie/lottie.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({super.key, required this.title});
+class OnboardingPage extends StatelessWidget {
+  const OnboardingPage({super.key, required this.title});
 
   final String title;
 
@@ -32,7 +31,7 @@ class LoginPage extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) {
-                          return LoginPage(title: "Login");
+                          return OnboardingPage(title: "Login");
                         },
                       ),
                     );
