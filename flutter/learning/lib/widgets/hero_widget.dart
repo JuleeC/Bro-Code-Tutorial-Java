@@ -8,10 +8,16 @@ class HeroWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-
-
-      },
+      onTap: nextPage != null ? () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) {
+              return nextPage!;
+            },
+          ),
+        );  
+      } : null,
       child: Stack(
         alignment: Alignment.center,
         children: [
@@ -23,7 +29,6 @@ class HeroWidget extends StatelessWidget {
                 "assets/images/aes.jpg",
                 color: Colors.teal,
                 colorBlendMode: BlendMode.darken,
-                
               ),
             ),
           ),
@@ -34,7 +39,7 @@ class HeroWidget extends StatelessWidget {
                 fontWeight: FontWeight.normal,
                 fontSize: 50.0,
                 letterSpacing: 50.0,
-                color: Colors.white30
+                color: Colors.white30,
               ),
             ),
           ),
