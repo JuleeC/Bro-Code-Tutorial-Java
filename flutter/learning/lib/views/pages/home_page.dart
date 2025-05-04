@@ -22,30 +22,7 @@ class HomePage extends StatelessWidget {
                 description: "This is a basic layout of a flutter app.",
               ),
             ),
-            ContainerWidget(
-              title: "Basic Layout",
-              description: "This is a basic layout of a flutter app.",
-            ),
-            ContainerWidget(
-              title: "Basic Layout",
-              description: "This is a basic layout of a flutter app.",
-            ),ContainerWidget(
-              title: "Basic Layout",
-              description: "This is a basic layout of a flutter app.",
-            ),ContainerWidget(
-              title: "Basic Layout",
-              description: "This is a basic layout of a flutter app.",
-            ),ContainerWidget(
-              title: "Basic Layout",
-              description: "This is a basic layout of a flutter app.",
-            ),ContainerWidget(
-              title: "Basic Layout",
-              description: "This is a basic layout of a flutter app.",
-            ),ContainerWidget(
-              title: "Basic Layout",
-              description: "This is a basic layout of a flutter app.",
-            ),
-                     
+                                
           ],
         ),
       ),
