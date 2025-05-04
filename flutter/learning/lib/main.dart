@@ -35,14 +35,14 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     initThemeMode();
     super.initState();
-    
   }
 
-  void initThemeMode() async{
+  void initThemeMode() async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
     final bool? repeat = prefs.getBool(KConstants.themeModekKey);
     isDarkModeNotifier.value = repeat ?? true;
   }
+
   @override
   Widget build(BuildContext context) {
     //material app

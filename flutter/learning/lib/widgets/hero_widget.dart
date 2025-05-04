@@ -8,16 +8,19 @@ class HeroWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: nextPage != null ? () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) {
-              return nextPage!;
-            },
-          ),
-        );  
-      } : null,
+      onTap:
+          nextPage != null
+              ? () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return nextPage!;
+                    },
+                  ),
+                );
+              }
+              : null,
       child: Stack(
         alignment: Alignment.center,
         children: [

@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            HeroWidget(title: "Flutter App", nextPage: CoursePage(),),
+            HeroWidget(title: "Flutter App", nextPage: CoursePage()),
             // you can use this to create a list of widgets
             // if you want to see how it looks like with the SingleChildScrollView
             ...List.generate(
@@ -30,7 +30,6 @@ class HomePage extends StatelessWidget {
                 description: "This is a basic layout of a flutter app.",
               ),
             ),
-                                
           ],
         ),
       ),

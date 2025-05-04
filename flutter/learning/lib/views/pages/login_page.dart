@@ -11,8 +11,6 @@ class LoginPage extends StatefulWidget {
   State<LoginPage> createState() => _LoginPageState();
 }
 
-
-
 class _LoginPageState extends State<LoginPage> {
   TextEditingController controllerPw = TextEditingController(text: "456");
   TextEditingController controllerEmail = TextEditingController(text: "123");
@@ -40,10 +38,10 @@ class _LoginPageState extends State<LoginPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Lottie.asset(
-                "assets/lotties/welcome.json",
-                width: 250,
-                height: 250,
-              ),
+                  "assets/lotties/welcome.json",
+                  width: 250,
+                  height: 250,
+                ),
                 TextField(
                   controller: controllerEmail,
                   decoration: InputDecoration(

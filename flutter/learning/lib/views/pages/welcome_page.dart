@@ -19,11 +19,11 @@ class WelcomePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-              Lottie.asset(
-                "assets/lotties/welcome.json",
-                width: 200,
-                height: 200,
-              ),
+                Lottie.asset(
+                  "assets/lotties/welcome.json",
+                  width: 200,
+                  height: 200,
+                ),
                 FittedBox(
                   child: Text(
                     "Flutter App",
