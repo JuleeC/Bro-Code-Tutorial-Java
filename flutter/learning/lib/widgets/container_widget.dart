@@ -13,15 +13,15 @@ class ContainerWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      padding: EdgeInsets.symmetric(vertical: 10.0),
+      padding: EdgeInsets.only(top: 10.0),
       child: Card(
         child: Padding(
           padding: EdgeInsets.all(20.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Basic Layout", style: KTextStyle.titleTealText),
-              Text("description", style: KTextStyle.descriptionText),
+              Text(title, style: KTextStyle.titleTealText),
+              Text(description, style: KTextStyle.descriptionText),
             ],
           ),
         ),
