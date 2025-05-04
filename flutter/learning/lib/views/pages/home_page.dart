@@ -12,6 +12,7 @@ class HomePage extends StatelessWidget {
       KValue.basicLayout,
       KValue.cleanUI,
       KValue.fixBugs,
+      KValue.keyConcepts,
     ];
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 20.0),
