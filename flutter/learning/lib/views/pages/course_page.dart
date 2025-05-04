@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:learning/data/constants.dart';
-import 'package:learning/views/pages/onboarding_page.dart';
-import 'package:learning/widgets/container_widget.dart';
 import 'package:learning/widgets/hero_widget.dart';
 
 class CoursePage extends StatelessWidget {
