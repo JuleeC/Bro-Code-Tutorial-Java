@@ -16,5 +16,4 @@ class KValue {
   static const String cleanUI = "clean UI";
   static const String fixBugs= "Fix Bugs";
   static const String keyConcepts= "Key Concepts";
-
 }

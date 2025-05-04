@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning/data/constants.dart';
 import 'package:learning/widgets/container_widget.dart';
 import 'package:learning/widgets/hero_widget.dart';
 
@@ -7,6 +8,11 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List<String> list = [
+      KValue.basicLayout,
+      KValue.cleanUI,
+      KValue.fixBugs,
+    ];
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 20.0),
       child: SingleChildScrollView(
@@ -16,9 +22,9 @@ class HomePage extends StatelessWidget {
             // you can use this to create a list of widgets
             // if you want to see how it looks like with the SingleChildScrollView
             ...List.generate(
-              20,
+              list.length,
               (index) => ContainerWidget(
-                title: "Basic Layout",
+                title: list[index],
                 description: "This is a basic layout of a flutter app.",
               ),
             ),
