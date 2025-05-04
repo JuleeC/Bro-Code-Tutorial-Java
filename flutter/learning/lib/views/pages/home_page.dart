@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learning/data/constants.dart';
+import 'package:learning/views/pages/course_page.dart';
+import 'package:learning/views/pages/onboarding_page.dart';
 import 'package:learning/widgets/container_widget.dart';
 import 'package:learning/widgets/hero_widget.dart';
 
@@ -19,7 +21,7 @@ class HomePage extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            HeroWidget(title: "Flutter App"),
+            HeroWidget(title: "Flutter App", nextPage: CoursePage(),),
             // you can use this to create a list of widgets
             // if you want to see how it looks like with the SingleChildScrollView
             ...List.generate(
