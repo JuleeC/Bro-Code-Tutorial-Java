@@ -29,16 +29,17 @@ class ExpandedFlexibleTestPage extends StatelessWidget {
               ),
             ],
           ),
+          Divider(),
           Row(
             children: [
-              Expanded(
+              Flexible(
                 child: Container(
                   color: Colors.teal,
                   height: 20,
                   child: Text("Hello"),
                 ),
               ),
-              Flexible(
+              Expanded(
                 child: Container(
                   color: Colors.orange,
                   height: 20,
