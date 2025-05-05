@@ -35,6 +35,7 @@ class _LoginPageState extends State<LoginPage> {
           child: Padding(
             padding: const EdgeInsets.all(20.0),
             child: FractionallySizedBox(
+              widthFactor: 0.7,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
