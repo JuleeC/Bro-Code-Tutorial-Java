@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning/views/pages/expanded_flexible_test_page.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key, required this.title});
@@ -122,7 +123,7 @@ class _SettingsPageState extends State<SettingsPage> {
                       context,
                       MaterialPageRoute(
                         builder: (context) {
-                          return LoginPage(title: "Login");
+                          return ExpandedFlexibleTestPage();
                         },
                       ),
                     );
