@@ -33,6 +33,7 @@ class ExpandedFlexibleTestPage extends StatelessWidget {
           Row(
             children: [
               Flexible(
+                flex: 4,
                 child: Container(
                   color: Colors.teal,
                   height: 20,
