@@ -9,8 +9,14 @@ class ExpandedFlexibleTestPage extends StatelessWidget {
       appBar: AppBar(),
       body: Column(
         children: [
-          Expanded(flex: 2,child: Container(color: Colors.teal)),
-          Expanded(child: Container(color: Colors.teal)),
+          // Expanded(flex: 2,child: Container(color: Colors.teal)),
+          // Expanded(child: Container(color: Colors.teal)),
+          Row(
+            children: [
+              Expanded(child: Container(color: Colors.teal, height: 20,)),
+              Expanded(child: Container(color: Colors.orange, height: 20,)),
+            ],
+          ),
         ],
       ),
     );
