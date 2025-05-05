@@ -20,6 +20,7 @@ class HomePage extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: [
+            SizedBox(height: 10),
             HeroWidget(title: "Flutter App", nextPage: CoursePage()),
             // you can use this to create a list of widgets
             // if you want to see how it looks like with the SingleChildScrollView
