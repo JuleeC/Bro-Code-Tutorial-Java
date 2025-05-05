@@ -13,8 +13,8 @@ class ExpandedFlexibleTestPage extends StatelessWidget {
           // Expanded(child: Container(color: Colors.teal)),
           Row(
             children: [
-              Expanded(child: Container(color: Colors.teal, height: 20,)),
-              Expanded(child: Container(color: Colors.orange, height: 20,)),
+              Expanded(child: Container(color: Colors.teal, height: 20,child: Text("Hello"))),
+              Flexible(child: Container(color: Colors.orange, height: 20,child: Text("Hello"))),
             ],
           ),
         ],
