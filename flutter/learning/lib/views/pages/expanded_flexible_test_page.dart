@@ -7,7 +7,12 @@ class ExpandedFlexibleTestPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Column(),
+      body: Column(
+        children: [
+          Expanded(flex: 2,child: Container(color: Colors.teal)),
+          Expanded(child: Container(color: Colors.teal)),
+        ],
+      ),
     );
   }
 }
