@@ -34,60 +34,64 @@ class _LoginPageState extends State<LoginPage> {
         child: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.all(20.0),
-            child: FractionallySizedBox(
-              widthFactor: 0.7,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Lottie.asset(
-                    "assets/lotties/welcome.json",
-                    width: 250,
-                    height: 250,
-                  ),
-                  TextField(
-                    controller: controllerEmail,
-                    decoration: InputDecoration(
-                      labelText: "Enter your email",
-                      hintText: "Email",
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10.0),
+            child: LayoutBuilder(
+              builder: (context, constraints) {
+                return FractionallySizedBox(
+                  widthFactor: 0.7,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Lottie.asset(
+                        "assets/lotties/welcome.json",
+                        width: 250,
+                        height: 250,
                       ),
-                    ),
-                    onEditingComplete: () {
-                      setState(() {
-                        //
-                      });
-                    },
-                  ),
-                  SizedBox(height: 10.0),
-                  TextField(
-                    controller: controllerPw,
-                    decoration: InputDecoration(
-                      labelText: "Enter your Password",
-                      hintText: "Password",
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10.0),
+                      TextField(
+                        controller: controllerEmail,
+                        decoration: InputDecoration(
+                          labelText: "Enter your email",
+                          hintText: "Email",
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10.0),
+                          ),
+                        ),
+                        onEditingComplete: () {
+                          setState(() {
+                            //
+                          });
+                        },
                       ),
-                    ),
-                    onEditingComplete: () {
-                      setState(() {
-                        //
-                      });
-                    },
+                      SizedBox(height: 10.0),
+                      TextField(
+                        controller: controllerPw,
+                        decoration: InputDecoration(
+                          labelText: "Enter your Password",
+                          hintText: "Password",
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10.0),
+                          ),
+                        ),
+                        onEditingComplete: () {
+                          setState(() {
+                            //
+                          });
+                        },
+                      ),
+                      SizedBox(height: 20.0),
+                      FilledButton(
+                        onPressed: () {
+                          onLoginPressed();
+                        },
+                        style: FilledButton.styleFrom(
+                          minimumSize: Size(double.infinity, 40.0),
+                        ),
+                        child: Text(widget.title),
+                      ),
+                      SizedBox(height: 150.0),
+                    ],
                   ),
-                  SizedBox(height: 20.0),
-                  FilledButton(
-                    onPressed: () {
-                      onLoginPressed();
-                    },
-                    style: FilledButton.styleFrom(
-                      minimumSize: Size(double.infinity, 40.0),
-                    ),
-                    child: Text(widget.title),
-                  ),
-                  SizedBox(height: 150.0),
-                ],
-              ),
+                );
+              },
             ),
           ),
         ),
