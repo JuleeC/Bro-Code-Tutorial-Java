@@ -117,6 +117,9 @@ class _SettingsPageState extends State<SettingsPage> {
                 });
               },
             ),
+            ElevatedButton(onPressed: () {
+              
+            }, child: Text("Show Flexible and Expanded")),
           ],
         ),
       ),
