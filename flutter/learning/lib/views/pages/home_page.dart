@@ -16,12 +16,13 @@ class HomePage extends StatelessWidget {
       KValue.keyConcepts,
     ];
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 20.0),
+      padding: EdgeInsets.symmetric(horizontal: 05.0),
       child: SingleChildScrollView(
         child: Column(
           children: [
             SizedBox(height: 10),
             HeroWidget(title: "Flutter App", nextPage: CoursePage()),
+            SizedBox(height: 05),
             // you can use this to create a list of widgets
             // if you want to see how it looks like with the SingleChildScrollView
             ...List.generate(
