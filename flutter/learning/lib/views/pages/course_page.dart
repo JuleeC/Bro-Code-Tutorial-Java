@@ -1,3 +1,7 @@
+
+
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:learning/widgets/hero_widget.dart';
 import 'dart:convert';
@@ -24,6 +28,7 @@ class _CoursePageState extends State<CoursePage> {
       var jsonResponse = jsonDecode(response.body) as Map<String, dynamic>;
       var itemCount = jsonResponse['activity'];
       print(itemCount);
+      log(response.body);
     } else {
       print('Request failed with status: ${response.statusCode}.');
     }
