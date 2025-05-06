@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learning/widgets/hero_widget.dart';
+import 'dart:convert' as convert;
+import 'package:http/http.dart' as http;
 
 class CoursePage extends StatefulWidget {
   const CoursePage({super.key});
@@ -18,7 +20,7 @@ class _CoursePageState extends State<CoursePage> {
 
   void getData() async{
      var url =
-        Uri.https('bored-api.appbrewery.com/random', '/random', {'q': '{http}'});
+        Uri.https('bored-api.appbrewery.com/random', '/random' );
     var response = await http.get(url);
     if (response.statusCode == 200) {
       var jsonResponse =
