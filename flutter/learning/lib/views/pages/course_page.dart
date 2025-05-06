@@ -11,16 +11,14 @@ class CoursePage extends StatefulWidget {
 }
 
 class _CoursePageState extends State<CoursePage> {
-  
   @override
   void initState() {
     getData();
     super.initState();
   }
 
-  void getData() async{
-     var url =
-        Uri.https('bored-api.appbrewery.com', '/random' );
+  void getData() async {
+    var url = Uri.https('bored-api.appbrewery.com', '/random');
     var response = await http.get(url);
     if (response.statusCode == 200) {
       var jsonResponse =
@@ -31,6 +29,7 @@ class _CoursePageState extends State<CoursePage> {
       print('Request failed with status: ${response.statusCode}.');
     }
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
