@@ -12,10 +12,12 @@ class _CoursePageState extends State<CoursePage> {
   
   @override
   void initState() {
-    super.initState();
     getData();
     super.initState();
-    // Initialize any data or state here if needed
+  }
+
+  void getData() {
+
   }
   @override
   Widget build(BuildContext context) {
