@@ -20,13 +20,13 @@ class _CoursePageState extends State<CoursePage> {
 
   void getData() async{
      var url =
-        Uri.https('bored-api.appbrewery.com/random', '/random' );
+        Uri.https('bored-api.appbrewery.com', '/random' );
     var response = await http.get(url);
     if (response.statusCode == 200) {
       var jsonResponse =
           convert.jsonDecode(response.body) as Map<String, dynamic>;
       var itemCount = jsonResponse['activity'];
-      print('Number of books about http: $itemCount.');
+      print(itemCount);
     } else {
       print('Request failed with status: ${response.statusCode}.');
     }
