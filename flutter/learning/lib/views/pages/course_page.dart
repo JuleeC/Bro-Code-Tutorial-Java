@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learning/widgets/hero_widget.dart';
-import 'dart:convert' as convert;
+import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class CoursePage extends StatefulWidget {
@@ -21,8 +21,7 @@ class _CoursePageState extends State<CoursePage> {
     var url = Uri.https('bored-api.appbrewery.com', '/random');
     var response = await http.get(url);
     if (response.statusCode == 200) {
-      var jsonResponse =
-          convert.jsonDecode(response.body) as Map<String, dynamic>;
+      var jsonResponse = jsonDecode(response.body) as Map<String, dynamic>;
       var itemCount = jsonResponse['activity'];
       print(itemCount);
     } else {
