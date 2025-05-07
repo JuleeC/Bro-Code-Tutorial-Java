@@ -15,6 +15,7 @@ class CoursePage extends StatefulWidget {
 }
 
 class _CoursePageState extends State<CoursePage> {
+  late Activity activity;
   @override
   void initState() {
     getData();
@@ -25,7 +26,7 @@ class _CoursePageState extends State<CoursePage> {
     var url = Uri.https('bored-api.appbrewery.com', '/random');
     var response = await http.get(url);
     if( response.statusCode == 200) {
-      return Activity.fromJson(jsonDecode(response.body) as Map<String, dynamic>);
+        activity = Activity.fromJson(jsonDecode(response.body) as Map<String, dynamic>);
     } else {
       throw Exception('Failed to load album');
     }
