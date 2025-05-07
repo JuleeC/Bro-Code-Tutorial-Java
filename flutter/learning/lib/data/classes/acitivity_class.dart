@@ -22,7 +22,22 @@ class Activity {
     required this.link,
     required this.key,
   });
-      
+    factory Activity.fromJson(Map<String, dynamic> json) {
+    return switch(json) {
+      {
+        'activity': var activity,
+        'type': var type,
+        'availability': var availability,
+        'participants': var participants,
+        'price': var price,
+        'accessibility': var accessibility,
+        'duration': var duration,
+        'kidFriendly': var kidFriendly,
+        'link': var link,
+        'key': var key,
+    
+
+
      
     
   }
