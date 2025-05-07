@@ -27,6 +27,8 @@ class _CoursePageState extends State<CoursePage> {
     var response = await http.get(url);
     if( response.statusCode == 200) {
         activity = Activity.fromJson(jsonDecode(response.body) as Map<String, dynamic>);
+        print(activity.activity);
+        print(activity.type);
     } else {
       throw Exception('Failed to load album');
     }
