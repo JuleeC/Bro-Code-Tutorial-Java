@@ -24,13 +24,10 @@ class _CoursePageState extends State<CoursePage> {
   void getData() async {
     var url = Uri.https('bored-api.appbrewery.com', '/random');
     var response = await http.get(url);
-    if (response.statusCode == 200) {
-      var jsonResponse = jsonDecode(response.body) as Map<String, dynamic>;
-      var itemCount = jsonResponse['activity'];
-      print(itemCount);
-      log(response.body);
+    if( response.statusCode == 200) {
+      return Album.fromJson(jsonDecode(response.body) as Map<String, dynamic>);
     } else {
-      print('Request failed with status: ${response.statusCode}.');
+      throw Exception('Failed to load album');
     }
   }
 
