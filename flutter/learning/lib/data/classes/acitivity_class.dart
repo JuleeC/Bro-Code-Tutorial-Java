@@ -46,7 +46,8 @@ class Activity {
           kidFriendly: kidFriendly,
           link: link,
           key: key),
-   };
+         _ => throw const FormatException('Failed to parse activity from JSON: '),
+    };
 
 
      
