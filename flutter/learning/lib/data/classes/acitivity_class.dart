@@ -35,7 +35,18 @@ class Activity {
         'kidFriendly': var kidFriendly,
         'link': var link,
         'key': var key,
-    
+      } => Activity(
+          activity: activity,
+          type: type,
+          availability: availability,
+          participants: participants,
+          price: price,
+          accessibility: accessibility,
+          duration: duration,
+          kidFriendly: kidFriendly,
+          link: link,
+          key: key),
+   };
 
 
      
