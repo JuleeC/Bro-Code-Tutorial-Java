@@ -1,8 +1,8 @@
 
 
-import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:learning/data/classes/acitivity_class.dart';
 import 'package:learning/widgets/hero_widget.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
@@ -25,7 +25,7 @@ class _CoursePageState extends State<CoursePage> {
     var url = Uri.https('bored-api.appbrewery.com', '/random');
     var response = await http.get(url);
     if( response.statusCode == 200) {
-      return Album.fromJson(jsonDecode(response.body) as Map<String, dynamic>);
+      return Activity.fromJson(jsonDecode(response.body) as Map<String, dynamic>);
     } else {
       throw Exception('Failed to load album');
     }
