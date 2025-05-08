@@ -40,11 +40,11 @@ class _CoursePageState extends State<CoursePage> {
         builder: (context, AsyncSnapshot snapshot) {
           Widget widget;
           if (snapshot.connectionState == ConnectionState.waiting) {
-            widget= CircularProgressIndicator();
+            widget = CircularProgressIndicator();
           }
           if (snapshot.hasData) {
             Activity activity = snapshot.data;
-            widget=  Padding(
+            widget = Padding(
               padding: EdgeInsets.symmetric(horizontal: 20.0),
               child: SingleChildScrollView(
                 child: Column(
@@ -56,7 +56,7 @@ class _CoursePageState extends State<CoursePage> {
               ),
             );
           } else {
-            widget=  Center(child: Text("Error"));
+            widget = Center(child: Text("Error"));
           }
           return widget;
         },
