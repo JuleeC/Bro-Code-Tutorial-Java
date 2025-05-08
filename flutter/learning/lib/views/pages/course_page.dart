@@ -19,7 +19,7 @@ class _CoursePageState extends State<CoursePage> {
     super.initState();
   }
 
-  void getData() async {
+  Future getData() async {
     var url = Uri.https('bored-api.appbrewery.com', '/random');
     var response = await http.get(url);
     if (response.statusCode == 200) {
@@ -43,12 +43,16 @@ class _CoursePageState extends State<CoursePage> {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return CircularProgressIndicator();
           }
-          return Padding(
+          if(snapshot.hasData) {
+           return Padding(
             padding: EdgeInsets.symmetric(horizontal: 20.0),
             child: SingleChildScrollView(
               child: Column(children: [HeroWidget(title: "Course")]),
             ),
-          );
+          ); 
+          } else {
+            return Center(child:  Text("Error"),);
+          }
         },
       ),
     );
