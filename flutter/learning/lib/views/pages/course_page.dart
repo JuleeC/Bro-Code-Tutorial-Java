@@ -42,10 +42,16 @@ class _CoursePageState extends State<CoursePage> {
             return CircularProgressIndicator();
           }
           if (snapshot.hasData) {
+            Activity activity = snapshot.data;
             return Padding(
               padding: EdgeInsets.symmetric(horizontal: 20.0),
               child: SingleChildScrollView(
-                child: Column(children: [HeroWidget(title: "Course")]),
+                child: Column(
+                  children: [
+                    HeroWidget(title: activity.activity),
+                    Text(activity.activity),
+                  ],
+                ),
               ),
             );
           } else {
