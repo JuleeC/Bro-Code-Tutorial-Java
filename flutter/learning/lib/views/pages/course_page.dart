@@ -38,12 +38,14 @@ class _CoursePageState extends State<CoursePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Padding(
+      body: FutureBuilder(future: getData(),builder:(context,AsyncSnapshot snapshot) {
+        return Padding(
         padding: EdgeInsets.symmetric(horizontal: 20.0),
         child: SingleChildScrollView(
           child: Column(children: [HeroWidget(title: "Course")]),
         ),
-      ),
-    );
+      );
+
+      },)  );
   }
 }
