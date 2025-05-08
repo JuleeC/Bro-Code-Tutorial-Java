@@ -1,6 +1,3 @@
-
-
-
 import 'package:flutter/material.dart';
 import 'package:learning/data/classes/acitivity_class.dart';
 import 'package:learning/widgets/hero_widget.dart';
@@ -25,10 +22,12 @@ class _CoursePageState extends State<CoursePage> {
   void getData() async {
     var url = Uri.https('bored-api.appbrewery.com', '/random');
     var response = await http.get(url);
-    if( response.statusCode == 200) {
-        activity = Activity.fromJson(jsonDecode(response.body) as Map<String, dynamic>);
-        print(activity.activity);
-        print(activity.type);
+    if (response.statusCode == 200) {
+      activity = Activity.fromJson(
+        jsonDecode(response.body) as Map<String, dynamic>,
+      );
+      print(activity.activity);
+      print(activity.type);
     } else {
       throw Exception('Failed to load album');
     }
@@ -38,14 +37,20 @@ class _CoursePageState extends State<CoursePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: FutureBuilder(future: getData(),builder:(context,AsyncSnapshot snapshot) {
-        return Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20.0),
-        child: SingleChildScrollView(
-          child: Column(children: [HeroWidget(title: "Course")]),
-        ),
-      );
-
-      },)  );
+      body: FutureBuilder(
+        future: getData(),
+        builder: (context, AsyncSnapshot snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return CircularProgressIndicator();
+          }
+          return Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.0),
+            child: SingleChildScrollView(
+              child: Column(children: [HeroWidget(title: "Course")]),
+            ),
+          );
+        },
+      ),
+    );
   }
 }
