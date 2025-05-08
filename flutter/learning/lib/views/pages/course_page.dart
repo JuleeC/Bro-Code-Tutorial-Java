@@ -23,11 +23,9 @@ class _CoursePageState extends State<CoursePage> {
     var url = Uri.https('bored-api.appbrewery.com', '/random');
     var response = await http.get(url);
     if (response.statusCode == 200) {
-      activity = Activity.fromJson(
+      return Activity.fromJson(
         jsonDecode(response.body) as Map<String, dynamic>,
       );
-      print(activity.activity);
-      print(activity.type);
     } else {
       throw Exception('Failed to load album');
     }
@@ -43,15 +41,15 @@ class _CoursePageState extends State<CoursePage> {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return CircularProgressIndicator();
           }
-          if(snapshot.hasData) {
-           return Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20.0),
-            child: SingleChildScrollView(
-              child: Column(children: [HeroWidget(title: "Course")]),
-            ),
-          ); 
+          if (snapshot.hasData) {
+            return Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20.0),
+              child: SingleChildScrollView(
+                child: Column(children: [HeroWidget(title: "Course")]),
+              ),
+            );
           } else {
-            return Center(child:  Text("Error"),);
+            return Center(child: Text("Error"));
           }
         },
       ),
