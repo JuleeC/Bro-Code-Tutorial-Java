@@ -13,6 +13,7 @@ class CoursePage extends StatefulWidget {
 
 class _CoursePageState extends State<CoursePage> {
   late Activity activity;
+  bool isFirst = true;
   @override
   void initState() {
     getData();
@@ -37,10 +38,12 @@ class _CoursePageState extends State<CoursePage> {
       appBar: AppBar(
         title: const Text("Course Page"),
         actions: [
-          IconButton(onPressed: () {
-            
-          },
-          icon: Icon(Icons.switch_access_shortcut))
+          IconButton(
+            onPressed: () {
+              isFirst = !isFirst;
+            },
+            icon: Icon(Icons.switch_access_shortcut),
+          ),
         ],
       ),
       body: FutureBuilder(
@@ -65,7 +68,10 @@ class _CoursePageState extends State<CoursePage> {
                   secondChild: Center(
                     child: Image.asset("assets/image/aes.jpg"),
                   ),
-                  crossFadeState: CrossFadeState.showFirst,
+                  crossFadeState:
+                      isFirst
+                          ? CrossFadeState.showFirst
+                          : CrossFadeState.showSecond,
                   duration: Duration(milliseconds: 1000),
                 ),
               ),
