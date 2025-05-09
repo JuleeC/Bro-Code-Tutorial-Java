@@ -40,7 +40,9 @@ class _CoursePageState extends State<CoursePage> {
         actions: [
           IconButton(
             onPressed: () {
-              isFirst = !isFirst;
+              setState(() {
+                isFirst = !isFirst;
+              });
             },
             icon: Icon(Icons.switch_access_shortcut),
           ),
