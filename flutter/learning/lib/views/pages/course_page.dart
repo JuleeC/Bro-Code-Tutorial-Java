@@ -34,7 +34,15 @@ class _CoursePageState extends State<CoursePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text("Course Page"),
+        actions: [
+          IconButton(onPressed: () {
+            
+          },
+          icon: Icon(Icons.switch_access_shortcut))
+        ],
+      ),
       body: FutureBuilder(
         future: getData(),
         builder: (context, AsyncSnapshot snapshot) {
@@ -58,7 +66,7 @@ class _CoursePageState extends State<CoursePage> {
                     child: Image.asset("assets/image/aes.jpg"),
                   ),
                   crossFadeState: CrossFadeState.showFirst,
-                  duration: Duration(milliseconds: 500),
+                  duration: Duration(milliseconds: 1000),
                 ),
               ),
             );
