@@ -54,11 +54,14 @@ class _CoursePageState extends State<CoursePage> {
                       Text(activity.activity),
                     ],
                   ),
-                  secondChild: Center(child: Image.asset("assets/image/aes.jpg")),
+                  secondChild: Center(
+                    child: Image.asset("assets/image/aes.jpg"),
+                  ),
                   crossFadeState: CrossFadeState.showFirst,
                   duration: Duration(milliseconds: 500),
+                ),
               ),
-            ));
+            );
           } else {
             widget = Center(child: Text("Error"));
           }
