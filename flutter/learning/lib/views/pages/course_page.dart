@@ -47,13 +47,7 @@ class _CoursePageState extends State<CoursePage> {
             widget = Padding(
               padding: EdgeInsets.symmetric(horizontal: 20.0),
               child: SingleChildScrollView(
-                child: Column(
-                  children: [
-                    HeroWidget(title: activity.activity),
-                    Text(activity.activity),
-                  ],
-                ),
-              ),
+                child: AnimatedCrossFade              ),
             );
           } else {
             widget = Center(child: Text("Error"));
